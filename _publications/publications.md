@@ -12,7 +12,7 @@ Peer-Reviewed Journal Publications
 
 1. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning* (tentatively accepted), 2021.
 
-2. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
+2. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
 
 3. Haoxiang Yang, **Özge Sürer**, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers. Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures. *Nature Communications*, 12, 3767, 2021. [[link](https://www.nature.com/articles/s41467-021-23989-x)]
 
