@@ -32,12 +32,12 @@ Mentorship experience
 ======
 * **Doctoral student**
     * **Bayesian Analysis of Nuclear Dynamics Collaboration, Summer Fellow**
-        + Yuriy Volkotrub (June 2020--September 2020)
+        + Yuriy Volkotrub (June 2021--September 2021)
           - Building a statistical method for quantifying the uncertainty in a physics model*
 
 * **Undergraduate students**
     * **Northwestern University, Industrial Engineering and Management Sciences Department**
-        + Justin Chen (June 2020--September 2020)
+        + Justin Chen (June 2021--September 2021)
           - Integration of visualization and diagnostics modules to the Python package surmise
         + Huangda Shang (September 2020--March 2021)
           - Alternative solutions of COVID-19 staged alert systems via derivative-free optimization methods
