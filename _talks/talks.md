@@ -16,56 +16,44 @@ Presentations & Invited Talks
 
 2. (upcoming) INFORMS Annual Meeting, Anaheim, CA, 2021.
 
-    *Calibration using emulation offiltered simulation results.*
+    *Calibration using emulation of filtered simulation results.*
 
 3. (upcoming) INFORMS Workshop on Data Mining and Decision Analytics, Anaheim, CA, 2021.
 
     *Discovering group structure in longitudinal data.*
 
-4. Alberta School of Business, University of Alberta, Alberta, Canada, 2020.
-
-    *Coefficient tree regression: Fast, accurate and interpretable predictive modeling.*
-
-5. David Nazarian College of Business and Economics, California State University, Northridge, CA, 2020.
-
-    *Coefficient tree regression: Fast, accurate and interpretable predictive modeling.*
-
-6. Tippie College of Business, University of Iowa, Iowa City, IA, 2019.
-
-    *Coefficient tree regression: Fast, accurate and interpretable predictive modeling.*
-
-7. INFORMS Annual Meeting, 2019.
+4. INFORMS Annual Meeting, 2019.
 
     *Coefficient tree regression for discovering structure in generalized linear models.*
 
-8. INFORMS Annual Meeting, 2019.
+5. INFORMS Annual Meeting, 2019.
 
     *Discovering structure in longitudinal data via coefficient tree regression.*
 
-9. INFORMS Annual Meeting, 2018.
+6. INFORMS Annual Meeting, 2018.
 
     *Coefficient tree regression for discovering hidden structure.*
 
-10. The Midwest Machine Learning Symposium, 2018.
+7. The Midwest Machine Learning Symposium, 2018.
 
     *Coefficient tree regression for discovering hidden structure.*
 
-11. The 12th ACM Conference on Recommender Systems, 2018.
+8. The 12th ACM Conference on Recommender Systems, 2018.
 
     *Multistakeholder recommendation with provider constraints.*
 
-12. The 11th ACM Conference on Recommender Systems, 2017.
+9. The 11th ACM Conference on Recommender Systems, 2017.
 
     *Improving similarity measures using ontological data.*
 
-13. The 34th National Conference for Operations Research and Industrial Engineering, 2014.
+10. The 34th National Conference for Operations Research and Industrial Engineering, 2014.
 
     *Event and clock-based representations in mathematical optimization.*
 
-14. The 26th European Conference on Operational Research, 2013.
+11. The 26th European Conference on Operational Research, 2013.
 
     *Simulated annealing algorithm with variable cluster number and comparison with $k$-means algorithm.*
 
-15. The 25th European Conference on Operational Research, 2012.
+12. The 25th European Conference on Operational Research, 2012.
 
     *A multi-criteria based evaluation of innovation strategy selection.*
