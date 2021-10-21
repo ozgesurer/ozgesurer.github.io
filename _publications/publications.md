@@ -21,7 +21,7 @@ Peer-Reviewed Journal Publications
 Peer-Reviewed Conference Proceedings
 ======
 
-5. **Özge Sürer**, Matthew Plumlee. Calibration using Emulation of Filtered Simulation Results. *Proceedings of Winter Simulation Conference*, 2021 (accepted).
+5. **Özge Sürer**, Matthew Plumlee. Calibration using emulation of filtered simulation results. *Proceedings of Winter Simulation Conference*, 2021 (accepted).
 
 6. **Özge Sürer**, Robin Burke, Edward C. Malthouse. Multistakeholder recommendation with provider constraints. *Proceedings of the 12th ACM Conference on Recommender Systems*, 54--62, 2018. [[link](https://dl.acm.org/citation.cfm?id=3240350)]
 

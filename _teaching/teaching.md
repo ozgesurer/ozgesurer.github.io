@@ -33,7 +33,7 @@ Mentorship experience
 * **Doctoral student**
     * **Bayesian Analysis of Nuclear Dynamics Collaboration, Summer Fellow**
         + Yuriy Volkotrub (June 2021--September 2021)
-          - Building a statistical method for quantifying the uncertainty in a physics model*
+          - Building a statistical method for quantifying the uncertainty in a physics model
 
 * **Undergraduate students**
     * **Northwestern University, Industrial Engineering and Management Sciences Department**
