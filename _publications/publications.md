@@ -10,7 +10,7 @@ author_profile: true
 Peer-Reviewed Journal Publications
 ======
 
-1. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning* (accepted), 2021.
+1. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning*, 2021. [[link](https://doi.org/10.1007/s10994-021-06091-7)]
 
 2. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
 

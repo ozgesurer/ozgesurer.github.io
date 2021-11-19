@@ -14,11 +14,11 @@ Presentations & Invited Talks
 
     *Calibration using emulation offiltered simulation results.*
 
-2. (upcoming) INFORMS Annual Meeting, Anaheim, CA, 2021.
+2. INFORMS Annual Meeting, Anaheim, CA, 2021.
 
     *Calibration using emulation of filtered simulation results.*
 
-3. (upcoming) INFORMS Workshop on Data Mining and Decision Analytics, Anaheim, CA, 2021.
+3. INFORMS Workshop on Data Mining and Decision Analytics, Anaheim, CA, 2021.
 
     *Discovering group structure in longitudinal data.*
 
