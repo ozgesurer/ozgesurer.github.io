@@ -17,3 +17,7 @@ sensitivity analysis.
 [[vignette]({{https://ozgesurer.github.io}}/files/ctr-vignette.html), [project page](https://github.com/ozgesurer/CTR)]
 
 R package for the application of coefficient tree regression (CTR).
+
+# Tutorials
+
+[Bfrescox](/software/tutorials)
