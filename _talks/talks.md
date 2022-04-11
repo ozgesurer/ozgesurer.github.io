@@ -10,9 +10,9 @@ author_profile: true
 Presentations & Invited Talks
 ======
 
-1. Winter Simulation Conference, Phoenix, AZ, 2021.
+1. SIAM Conference on Uncertainty Quantification, Atlanta, GA, 2022.
 
-    *Calibration using emulation of filtered simulation results.*
+    *A sequential approach to calibration of a computationally intensive model.*
     
 2. SIAM Conference on Parallel Processing for Scientific Computing, 2022.
 
