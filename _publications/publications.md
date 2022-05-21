@@ -30,12 +30,14 @@ Peer-Reviewed Conference Proceedings
 Under Review & In Preparation
 ======
 
-8. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Discovering structure in longitudinal data via coefficient tree regression. In preparation.
+8. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. Submitted.
 
-9. Paul J. Rathouz, Victoria Valencia, Patrick Chang, David P. Morton, Haoxiang Yang, **Özge Sürer**, Spencer J. Fox, Elizabeth C. Matsui, Alex B. Haynes, Lauren A. Meyers. Survival analysis methods for analysis of hospitalization data: Application to COVID-19 patient hospitalization experience. Submitted. [[link](https://www.medrxiv.org/content/10.1101/2021.04.14.21255511v1)].
+9. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Discovering structure in longitudinal data via coefficient tree regression. Submitted.
 
 Technical Reports
 ======
+
+1. Paul J. Rathouz, Victoria Valencia, Patrick Chang, David P. Morton, Haoxiang Yang, **Özge Sürer**, Spencer J. Fox, Elizabeth C. Matsui, Alex B. Haynes, Lauren A. Meyers. Survival analysis methods for analysis of hospitalization data: Application to COVID-19 patient hospitalization experience. Technical Report, 2021. [[link](https://www.medrxiv.org/content/10.1101/2021.04.14.21255511v1)]
 
 1. Nazlican Arslan, **Özge Sürer**, David P. Morton, Haoxiang Yang, Michael Lachmann, Spencer Woody, Spencer J. Fox, and Lauren Ancel Meyers. COVID-19 alert stages, healthcare projections and
 mortality patterns in Austin, Texas. Technical Report, 2021. [[link](https://covid-19.tacc.utexas.edu/media/filer_public/15/4d/154defa8-9217-478e-a459-8fc4144c61b5/austin_covid_alert_stage_and_mortality_trends_-_ut_-_may_2021.pdf)]
