@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ozge Surer / Personal Website"
 title_separator          : "-"
 name                     : &name "Ozge Surer"
-description              : &description "Postdoctoral Fellow at NAISE"
+description              : &description "Assistant Professor at Miami University"
 url                      : https://ozgesurer.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ozgesurer/ozgesurer.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Ozge Surer"
   avatar           : "os.jpg"
-  bio              : "Postdoc @NAISE"
-  location         : "Evanston-IL"
+  bio              : "Assistant Prof @MiamiOH"
+  location         : "Oxford, OH"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&amp;user=3xDBhh4AAAAJ"

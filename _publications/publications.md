@@ -10,27 +10,27 @@ author_profile: true
 Peer-Reviewed Journal Publications
 ======
 
-1. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning*, 2021. [[link](https://doi.org/10.1007/s10994-021-06091-7)]
+1. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. *Physical Review C*, 106 (024607), 2022. [[link](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607}{link})]
 
-2. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
+2. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning*, 2021. [[link](https://doi.org/10.1007/s10994-021-06091-7)]
 
-3. Haoxiang Yang, **Özge Sürer**, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers. Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures. *Nature Communications*, 12, 3767, 2021. [[link](https://www.nature.com/articles/s41467-021-23989-x)]
+3. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
 
-4. Seda Yanik, **Özge Sürer**, Basar Oztaysi. Designing sustainable energy regions using genetic algorithms and location-allocation approach. *Energy*, 161--172. 2016. [[link](https://www.sciencedirect.com/science/article/pii/S0360544215017612)]
+4. Haoxiang Yang, **Özge Sürer**, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers. Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures. *Nature Communications*, 12, 3767, 2021. [[link](https://www.nature.com/articles/s41467-021-23989-x)]
+
+5. Seda Yanik, **Özge Sürer**, Basar Oztaysi. Designing sustainable energy regions using genetic algorithms and location-allocation approach. *Energy*, 161--172. 2016. [[link](https://www.sciencedirect.com/science/article/pii/S0360544215017612)]
 
 Peer-Reviewed Conference Proceedings
 ======
 
-5. **Özge Sürer**, Matthew Plumlee. Calibration using emulation of filtered simulation results. *Proceedings of Winter Simulation Conference*, 2021. [[link](https://ieeexplore.ieee.org/abstract/document/9715296)]
+6. **Özge Sürer**, Matthew Plumlee. Calibration using emulation of filtered simulation results. *Proceedings of Winter Simulation Conference*, 2021. [[link](https://ieeexplore.ieee.org/abstract/document/9715296)]
 
-6. **Özge Sürer**, Robin Burke, Edward C. Malthouse. Multistakeholder recommendation with provider constraints. *Proceedings of the 12th ACM Conference on Recommender Systems*, 54--62, 2018. [[link](https://dl.acm.org/citation.cfm?id=3240350)]
+7. **Özge Sürer**, Robin Burke, Edward C. Malthouse. Multistakeholder recommendation with provider constraints. *Proceedings of the 12th ACM Conference on Recommender Systems*, 54--62, 2018. [[link](https://dl.acm.org/citation.cfm?id=3240350)]
 
-7. **Özge Sürer**. Improving similarity measures using ontological data. *Proceedings of the 11th ACM Conference on Recommender Systems*, 416--420, 2017. [[link](https://dl.acm.org/citation.cfm?id=3109863)]
+8. **Özge Sürer**. Improving similarity measures using ontological data. *Proceedings of the 11th ACM Conference on Recommender Systems*, 416--420, 2017. [[link](https://dl.acm.org/citation.cfm?id=3109863)]
 
 Under Review & In Preparation
 ======
-
-8. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. Submitted.
 
 9. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Discovering structure in longitudinal data via coefficient tree regression. Submitted.
 
