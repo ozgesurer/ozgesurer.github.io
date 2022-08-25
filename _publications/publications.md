@@ -29,11 +29,6 @@ Peer-Reviewed Conference Proceedings
 
 8. **Özge Sürer**. Improving similarity measures using ontological data. *Proceedings of the 11th ACM Conference on Recommender Systems*, 416--420, 2017. [[link](https://dl.acm.org/citation.cfm?id=3109863)]
 
-Under Review & In Preparation
-======
-
-9. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Discovering structure in longitudinal data via coefficient tree regression. Submitted.
-
 Technical Reports
 ======
 
