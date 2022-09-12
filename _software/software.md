@@ -18,6 +18,12 @@ sensitivity analysis.
 
 R package for the application of coefficient tree regression (CTR).
 
+## ``LongCTR``
+
+[[vignette]({{https://ozgesurer.github.io}}/files/vignette.html), [project page](https://github.com/ozgesurer/LongCTR)]
+
+R package for the application of longitudinal coefficient tree regression (LCTR).
+
 # Tutorials
 
 [Bfrescox](/software/tutorials)
