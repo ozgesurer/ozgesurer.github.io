@@ -11,11 +11,11 @@ Presentations & Invited Talks
 ======
 1. 2022 Fall Meeting of the Division of Nuclear Physics of the American Physical Society, New Orleans, LA, 2022.
 
-    *The Bayesian analysis of nuclear dynamics framework.
+    *The Bayesian analysis of nuclear dynamics framework.*
 
 2. INFORMS Annual Meeting, Indianapolis, IN, 2022. 
 
-    *Batch sequential calibration of a computationally intensive simulation model using parallel computing.
+    *Batch sequential calibration of a computationally intensive simulation model using parallel computing.*
     
 3. SIAM Conference on Uncertainty Quantification, Atlanta, GA, 2022.
 
