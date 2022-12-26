@@ -10,7 +10,22 @@ author_profile: true
 Bayesian analysis of physical-statistical models
 ======
 
-With the increased access to parallel computing environments, computer models have become pervasive throughout much of science to understand large and complex physical processes in many engineering and science disciplines. These models can be used for system design and optimization, forecasting and prediction, and to guide future data collection. Two major challenges exist in the usage of these models: the presence of unknown or observable parameters which must be inferred using data and the reality that all models are at least somewhat wrong. While there are Bayesian statistical tools to handle this in theory, this project aims to use computational research to transform these theoretical relationships into tools and techniques for making reliable computational predictions of complex systems with well-quantified uncertainties. This requires using cutting edge research in machine learning and statistical learning that can handle big data environments. The focus of my postdoctoral project is on building cyberinfrastructure for problems in the nuclear-physics (NP) domain. You can find more about the [Bayesian analysis of nuclear dynamics framework](https://bandframework.github.io) from the link.
+With the increased access to parallel computing environments, computer models have become pervasive throughout much of science
+to understand large and complex physical processes in many engineering and science disciplines. These models can be used for 
+system design and optimization, forecasting and prediction, and to guide future data collection. Two major challenges exist 
+in the usage of these models: the presence of unknown or observable parameters which must be inferred using data and the reality
+that all models are at least somewhat wrong. While there are Bayesian statistical tools to handle this in theory, this project 
+aims to use computational research to transform these theoretical relationships into tools and techniques for making reliable
+computational predictions of complex systems with well-quantified uncertainties. This requires using cutting edge research 
+in machine learning and statistical learning that can handle big data environments. 
+
+The focus of Bayesian analysis of nuclear dynamics (BAND) framework is on building cyberinfrastructure for problems in the nuclear-physics domain. 
+You can find more about the [Bayesian analysis of nuclear dynamics framework](https://bandframework.github.io) from the link.
+
+[[See our paper at Physical Review C](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607)]
+
+
+
 
 COVID-19 response
 ======
@@ -19,12 +34,7 @@ COVID-19 response
 
 In this study, we apply stochastic optimization to recommend policy triggers governing stages of community mitigation to prevent overwhelming hospital surges and ensure adequate capacity in the unlikely case that they occur.
 
-[[See our paper at MedRxiv](https://www.medrxiv.org/content/10.1101/2020.11.26.20152520v2)]
-
-[[See the first technical report](https://cid.utexas.edu/sites/default/files/cid/files/houston_strategy_to_avoid_surge.pdf?m=1592489259)]
-
-[[See the second technical report](https://sites.cns.utexas.edu/sites/default/files/cid/files/austin_acs_alternative.pdf?m=1610127444)]
-
+[[See our paper at Nature Communications](https://www.nature.com/articles/s41467-021-23989-x)]
 
 
 ***Optimal vaccine allocation policy***
@@ -38,9 +48,15 @@ Interpretable, fast, and accurate predictive models
 
 My dissertation proposes a new algorithm, ***coefficient tree regression***, that fits regression models in a fundamentally different way to discover the group structure from high-dimensional data.
 
+[[See our paper at Machine Learning](https://link.springer.com/article/10.1007/s10994-021-06091-7)]
+
+
 ***Coefficient tree regression for discovering structure in generalized linear models***
 
 Massive regression data sets are now commonplace, with so many predictors that they cannot or should not all be included individually. In practice, derived predictors that are the sum of groups of individual predictors (which is equivalent to predictors within groups sharing the same coefficient) are often relevant. However, the groups of predictors are often not known in advance, and they must be discovered from the data. In this study, we extend our coefficient tree regression algorithm to generalized linear models to discover the group structure from the data.
+
+[[See our paper at Statistical Analysis and Data Mining](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
+
 
 ***Discovering structure in longitudinal data***
 
