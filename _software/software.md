@@ -5,6 +5,12 @@ permalink: /software/
 author_profile: true
 ---
 
+## ``PUQ``
+
+[[read the docs](https://puq.readthedocs.io/en/latest/), [project page](https://github.com/parallelUQ/PUQ)]
+
+Python package designed for parallel implementation of novel uncertainty quantification methods.
+
 ## ``surmise``
 
 [[read the docs](https://surmise.readthedocs.io/en/latest/), [project page](https://github.com/surmising/surmise)]
