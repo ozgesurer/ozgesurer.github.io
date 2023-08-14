@@ -10,15 +10,17 @@ author_profile: true
 Peer-Reviewed Journal Publications
 ======
 
-1. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. *Physical Review C*, 106 (024607), 2022. [[link](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607}{link})]
+1. **Özge Sürer**,  Matthew Plumlee, Stefan M. Wild. Sequential Bayesian experimental design for calibration of expensive simulation models. *Technometrics*, to appear, 2023. [[link](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2246157?src=&journalCode=utch20}{link})]
 
-2. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning*, 2021. [[link](https://doi.org/10.1007/s10994-021-06091-7)]
+2. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. *Physical Review C*, 106 (024607), 2022. [[link](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607}{link})]
 
-3. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
+3. **Özge Sürer**, Daniel Apley, Edward C. Malthouse. Coefficient tree regression:  Fast, accurate and interpretable predictive modeling. *Machine Learning*, 2021. [[link](https://doi.org/10.1007/s10994-021-06091-7)]
 
-4. Haoxiang Yang, **Özge Sürer**, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers. Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures. *Nature Communications*, 12, 3767, 2021. [[link](https://www.nature.com/articles/s41467-021-23989-x)]
+4. **Özge Sürer**, Daniel W. Apley, Edward C. Malthouse. Coefficient tree regression for generalized linear models. *Statistical Analysis and Data Mining*, 14, 407--429, 2021. [[link](https://onlinelibrary.wiley.com/doi/10.1002/sam.11534)]
 
-5. Seda Yanik, **Özge Sürer**, Basar Oztaysi. Designing sustainable energy regions using genetic algorithms and location-allocation approach. *Energy*, 161--172. 2016. [[link](https://www.sciencedirect.com/science/article/pii/S0360544215017612)]
+5. Haoxiang Yang, **Özge Sürer**, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers. Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures. *Nature Communications*, 12, 3767, 2021. [[link](https://www.nature.com/articles/s41467-021-23989-x)]
+
+6. Seda Yanik, **Özge Sürer**, Basar Oztaysi. Designing sustainable energy regions using genetic algorithms and location-allocation approach. *Energy*, 161--172. 2016. [[link](https://www.sciencedirect.com/science/article/pii/S0360544215017612)]
 
 Peer-Reviewed Conference Proceedings
 ======
