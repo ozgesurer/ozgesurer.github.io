@@ -10,7 +10,7 @@ author_profile: true
 Peer-Reviewed Journal Publications
 ======
 
-1. **Özge Sürer**,  Matthew Plumlee, Stefan M. Wild. Sequential Bayesian experimental design for calibration of expensive simulation models. *Technometrics*, to appear, 2023. [[link](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2246157?src=&journalCode=utch20}{link})]
+1. **Özge Sürer**,  Matthew Plumlee, Stefan M. Wild. Sequential Bayesian experimental design for calibration of expensive simulation models. *Technometrics*, to appear, 2023. [[link](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2246157?src=&journalCode=utch20)]
 
 2. **Özge Sürer**, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild. Uncertainty quantification in breakup reactions. *Physical Review C*, 106 (024607), 2022. [[link](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607)]
 
