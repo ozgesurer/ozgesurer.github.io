@@ -12,4 +12,5 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
 
 [Download CV]({{https://ozgesurer.github.io}}/files/OS_CV.pdf)
 
-My primary research interests lie at the intersection of statistics and machine learning to analyze and develop tools for learning from large data sets. My doctoral work focuses on designing interpretable predictive models to discover the group structure from data, and their interdisciplinary applications. In addition, I develop tools and techniques relying on Bayesian statistical learning to predict the future behavior of physical systems with well-quantified uncertainties.
+My research interests include uncertainty quantification, statistical computing, and statistical methods for large data sets. The objective of this research is to develop new statistical methods in the presence of data. 
+
