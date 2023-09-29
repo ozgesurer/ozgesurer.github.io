@@ -22,9 +22,11 @@ in machine learning and statistical learning that can handle big data environmen
 The focus of Bayesian analysis of nuclear dynamics (BAND) framework is on building cyberinfrastructure for problems in the nuclear-physics domain. 
 You can find more about the [Bayesian analysis of nuclear dynamics framework](https://bandframework.github.io) from the link.
 
+[[See our paper at Technometrics](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2246157?src=&journalCode=utch20)]
+
 [[See our paper at Physical Review C](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607)]
 
-
+[[See our arXiv paper](https://arxiv.org/abs/2302.14184)]
 
 
 COVID-19 response
