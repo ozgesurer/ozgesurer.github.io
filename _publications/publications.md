@@ -10,7 +10,7 @@ author_profile: true
 Peer-Reviewed Journal Publications
 ======
 
-1. **Özge Sürer**,  Daniel W. Apley, Edward C. Malthouse. Discovering interpretable structure in longitudinal predictors via coefficient trees. *Advances in Data Analysis and Classification*, 2023. [forthcoming]
+1. **Özge Sürer**,  Daniel W. Apley, Edward C. Malthouse. Discovering interpretable structure in longitudinal predictors via coefficient trees. *Advances in Data Analysis and Classification*, 2023. [[link](https://link.springer.com/article/10.1007/s11634-023-00562-6)]
 
 2. **Özge Sürer**,  Matthew Plumlee, Stefan M. Wild. Sequential Bayesian experimental design for calibration of expensive simulation models. *Technometrics*, 2023. [[link](https://www.tandfonline.com/doi/abs/10.1080/00401706.2023.2246157?src=&journalCode=utch20)]
 
