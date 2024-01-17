@@ -12,5 +12,19 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
 
 [Download CV]({{https://ozgesurer.github.io}}/files/OS_CV.pdf)
 
+education:
+  courses:
+  - course: PhD in Industrial Engineering and Management Sciences
+    institution: Northwestern University
+    year: 2020
+  - course: MS in Industrial Engineering
+    institution: Bogazici University
+    year: 2014
+email: "surero@miamioh.edu"
+interests:
+- Uncertainty quantification
+- Statistical computing
+- Statistical methods for large data sets
+
 My research interests include uncertainty quantification, statistical computing, and statistical methods for large data sets. The objective of this research is to develop new statistical methods in the presence of data. 
 
