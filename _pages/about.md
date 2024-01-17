@@ -8,23 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor of [Analytics at Miami University](https://www.miamioh.edu/fsb/academics/isa/). I graduated with a PhD degree from the [Department of Industrial Engineering and Management Sciences at Northwestern University](https://www.mccormick.northwestern.edu/industrial/).  
+I am an Assistant Professor of [Analytics at Miami University](https://www.miamioh.edu/fsb/academics/isa/).
 
-[Download CV]({{https://ozgesurer.github.io}}/files/OS_CV.pdf)
+**Education:**
+  - PhD in Industrial Engineering and Management Sciences
+    Northwestern University
+    2020
+  - MS in Industrial Engineering
+    Bogazici University
+    2014
 
-education:
-  courses:
-  - course: PhD in Industrial Engineering and Management Sciences
-    institution: Northwestern University
-    year: 2020
-  - course: MS in Industrial Engineering
-    institution: Bogazici University
-    year: 2014
-email: "surero@miamioh.edu"
-interests:
+**Interests:**
 - Uncertainty quantification
 - Statistical computing
 - Statistical methods for large data sets
 
-My research interests include uncertainty quantification, statistical computing, and statistical methods for large data sets. The objective of this research is to develop new statistical methods in the presence of data. 
+The objective of my research is to develop new statistical methods in the presence of data. 
 
