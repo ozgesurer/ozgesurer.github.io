@@ -12,11 +12,11 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
 
 **Education:**
   - PhD in Industrial Engineering and Management Sciences
-    Northwestern University
-    2020
+      - *Northwestern University*, 2020
   - MS in Industrial Engineering
-    Bogazici University
-    2014
+      - *Bogazici University*, 2014
+  - BS in Industrial Engineering
+      - *Istanbul Technical University*, 2011
 
 **Interests:**
 - Uncertainty quantification
