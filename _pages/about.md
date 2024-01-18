@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor of [Analytics at Miami University](https://www.miamioh.edu/fsb/academics/isa/).
+I am an Assistant Professor of [Analytics at Miami University](https://www.miamioh.edu/fsb/academics/isa/). The objective of my research is to develop new statistical methods in the presence of data. 
 
 **Education:**
   - PhD in Industrial Engineering and Management Sciences
@@ -21,7 +21,7 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
 **Interests:**
 - Uncertainty quantification
 - Statistical computing
-- Statistical methods for large data sets
+- Statistical learning for large data sets
 
-The objective of my research is to develop new statistical methods in the presence of data. 
+
 
