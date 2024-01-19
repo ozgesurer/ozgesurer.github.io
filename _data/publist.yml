@@ -17,7 +17,7 @@
   news2:
 
 - title: "Discovering interpretable structure in longitudinal predictors via coefficient trees"
-  image: bestworstresponse6.png
+  image: long_tree.png
   description: >
    We consider the regression setting in which the response variable is not longitudinal (i.e., it is observed once for each case), 
    but it is assumed to depend functionally on a set of predictors that are observed longitudinally, which is a specific form of 
@@ -39,7 +39,7 @@
   news2:
 
 - title: "Bayesian calibration of viscous anisotropic hydrodynamic simulations of heavy-ion collisions"
-  image: bestworstresponse6.png
+  image: VAH_shear.png
   description: >
     Due to large pressure gradients at early times, standard hydrodynamic model simulations of relativistic heavy-ion collisions 
     do not become reliable until O(1)fm/c after the collision. To address this one often introduces a pre-hydrodynamic stage that
@@ -58,7 +58,7 @@
   news2:
 
 - title: "Uncertainty quantification in breakup reactions"
-  image: bestworstresponse6.png
+  image: surmiseCDCC.png
   description: >
     Due to large pressure gradients at early times, standard hydrodynamic model simulations of relativistic heavy-ion collisions 
     do not become reliable until O(1)fm/c after the collision. To address this one often introduces a pre-hydrodynamic stage that
