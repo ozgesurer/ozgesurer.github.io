@@ -104,7 +104,7 @@
   news2:
 
 - title: "Coefficient tree regression for generalized linear models"
-  image: bestworstresponse6.png
+  image: 10pieces.eps
   description: >
     Large regression data sets are now commonplace, with so many predictors that they cannot or should not all be included individually. 
     In practice, derived predictors are relevant as meaningful features or, at the very least, as a form of regularized approximation of 
