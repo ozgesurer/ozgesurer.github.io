@@ -31,9 +31,47 @@
    interpretation of the data. In numerical comparisons over a variety of examples, we show that our approach achieves substantially 
    better predictive accuracy than existing competitors, most likely due to its inherent form of dimensionality reduction that is 
    automatically discovered when fitting the model, in addition to having interpretability advantages and lower computational expense.
-  authors: Özge Sürer,  Daniel W. Apley, Edward C. Malthouse
+  authors: Özge Sürer,  Daniel W. Apley, Edward C. Malthouse.
   link:
     url: https://link.springer.com/article/10.1007/s11634-023-00562-6
     display:  Advances in Data Analysis and Classification (2023)
+  highlight: 1
+  news2:
+
+- title: "Bayesian calibration of viscous anisotropic hydrodynamic simulations of heavy-ion collisions"
+  image: bestworstresponse6.png
+  description: >
+    Due to large pressure gradients at early times, standard hydrodynamic model simulations of relativistic heavy-ion collisions 
+    do not become reliable until O(1)fm/c after the collision. To address this one often introduces a pre-hydrodynamic stage that
+    models the early evolution microscopically, typically as a conformal, weakly interacting gas. In such an approach the transition
+    from the pre-hydrodynamic to the hydrodynamic stage is discontinuous, introducing considerable theoretical model ambiguity. 
+    Alternatively, fluids with large anisotropic pressure gradients can be handled macroscopically using the recently developed 
+    Viscous Anisotropic Hydrodynamics (VAH). In high-energy heavy-ion collisions VAH is applicable already at very early times, 
+    and at later times transitions smoothly into conventional second-order viscous hydrodynamics (VH). We present a Bayesian calibration
+    of the VAH model with experimental data for Pb–Pb collisions at the LHC. We find that the VAH model has the unique capability of 
+    constraining the specific viscosities of the QGP at higher temperatures than other previously used models.
+  authors: Dananjaya Liyanage, Özge Sürer, Matthew Plumlee, Stefan M. Wild, Ulrich Heinz.
+  link:
+    url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.108.054905
+    display: Physical Review C (2023)
+  highlight: 1
+  news2:
+
+- title: "Uncertainty quantification in breakup reactions"
+  image: bestworstresponse6.png
+  description: >
+    Due to large pressure gradients at early times, standard hydrodynamic model simulations of relativistic heavy-ion collisions 
+    do not become reliable until O(1)fm/c after the collision. To address this one often introduces a pre-hydrodynamic stage that
+    models the early evolution microscopically, typically as a conformal, weakly interacting gas. In such an approach the transition
+    from the pre-hydrodynamic to the hydrodynamic stage is discontinuous, introducing considerable theoretical model ambiguity. 
+    Alternatively, fluids with large anisotropic pressure gradients can be handled macroscopically using the recently developed 
+    Viscous Anisotropic Hydrodynamics (VAH). In high-energy heavy-ion collisions VAH is applicable already at very early times, 
+    and at later times transitions smoothly into conventional second-order viscous hydrodynamics (VH). We present a Bayesian calibration
+    of the VAH model with experimental data for Pb–Pb collisions at the LHC. We find that the VAH model has the unique capability of 
+    constraining the specific viscosities of the QGP at higher temperatures than other previously used models.
+  authors: Özge Sürer, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild.
+  link:
+    url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607
+    display: Physical Review C (2022)
   highlight: 1
   news2:
