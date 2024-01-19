@@ -1,5 +1,5 @@
 - title: "Sequential Bayesian experimental design for calibration of expensive simulation models"
-  image: flowchart_tikz_paper_truncated.png
+  image: eivar_cs.png
   description: >
     Simulation models of critical systems often have parameters that need to be calibrated using observed data. 
     For expensive simulation models, calibration is done using an emulator of the simulation model built on simulation 
