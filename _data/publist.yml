@@ -75,3 +75,48 @@
     display: Physical Review C (2022)
   highlight: 1
   news2:
+
+- title: "Coefficient tree regression: fast, accurate and interpretable predictive modeling"
+  image: bestworstresponse6.png
+  description: >
+    The proliferation of data collection technologies often results in large data sets with many observations and many variables. 
+    In practice, highly relevant engineered features are often groups of predictors that share a common regression coefficient 
+    (i.e., the predictors in the group affect the response only via their collective sum), where the groups are unknown in advance 
+    and must be discovered from the data. We propose an algorithm called coefficient tree regression (CTR) to discover the group 
+    structure and fit the resulting regression model. In this regard CTR is an automated way of engineering new features, each of 
+    which is the collective sum of the predictors within each group. The algorithm can be used when the number of variables is larger 
+    than, or smaller than, the number of observations. Creating new features that affect the response in a similar manner improves 
+    predictive modeling, especially in domains where the relationships between predictors are not known a priori. CTR borrows 
+    computational strategies from both linear regression (fast model updating when adding/modifying a feature in the model) and 
+    regression trees (fast partitioning to form and split groups) to achieve outstanding computational and predictive performance. 
+    Finding features that represent hidden groups of predictors (i.e., a hidden ontology) that impact the response only via their 
+    sum also has major interpretability advantages, which we demonstrate with a real data example of predicting political affiliations 
+    with television viewing habits. In numerical comparisons over a variety of examples, we demonstrate that both computational expense 
+    and predictive performance are far superior to existing methods that create features as groups of predictors. Moreover, CTR has 
+    overall predictive performance that is comparable to or slightly better than the regular lasso method, which we include as a 
+    reference benchmark for comparison even though it is non-group-based, in addition to having substantial computational and interpretive 
+    advantages over lasso.
+  authors: Özge Sürer, Daniel W. Apley, Edward C. Malthouse.
+  link:
+    url: https://doi.org/10.1007/s10994-021-06091-7
+    display: Machine Learning (2021)
+  highlight: 1
+  news2:
+
+- title: "CCoefficient tree regression for generalized linear models"
+  image: bestworstresponse6.png
+  description: >
+    Large regression data sets are now commonplace, with so many predictors that they cannot or should not all be included individually. 
+    In practice, derived predictors are relevant as meaningful features or, at the very least, as a form of regularized approximation of 
+    the true coefficients. We consider derived predictors that are the sum of some groups of individual predictors, which is equivalent 
+    to predictors within a group sharing the same coefficient. However, the groups of predictors are usually not known in advance and 
+    must be discovered from the data. In this paper we develop a coefficient tree regression algorithm for generalized linear models to 
+    discover the group structure from the data. The approach results in simple and highly interpretable models, and we demonstrated with 
+    real examples that it can provide a clear and concise interpretation of the data. Via simulation studies under different scenarios we 
+    showed that our approach performs better than existing competitors in terms of computing time and predictive accuracy.
+  authors: Özge Sürer, Daniel W. Apley, Edward C. Malthouse.
+  link:
+    url: https://onlinelibrary.wiley.com/doi/10.1002/sam.11534
+    display: Statistical Analysis and Data Mining (2021)
+  highlight: 1
+  news2:
