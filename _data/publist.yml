@@ -140,3 +140,21 @@
     display: Nature Communications (2021)
   highlight: 1
   news2:
+
+  - title: "Calibration using emulation of filtered simulation results"
+  image: winsim.png
+  description: >
+    Calibration of parameters in simulation models is necessary to develop sharp predictions with quantified uncertainty. 
+    A scalable method for calibration involves building an emulator after conducting an experiment on the simulation model. 
+    However, when the parameter space is large, meaning the parameters are quite uncertain prior to calibration, 
+    much of the parameter space can produce unstable or unrealistic simulator responses that drastically differ from the observed data. 
+    One solution to this problem is to simply discard, or filter out, the parameters that gave unreasonable responses and then build an 
+    emulator only on the remaining simulator responses. In this article, we demonstrate the key mechanics for an approach that emulates 
+    filtered responses but also avoids unstable and incorrect inference. These ideas are illustrated on a real data example of calibrating 
+    COVID-19 epidemiological simulation model.
+  authors: Özge Sürer, Matthew Plumlee.
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9715296
+    display: Proceedings of Winter Simulation Conference (WSC) (2021)
+  highlight: 1
+  news2:
