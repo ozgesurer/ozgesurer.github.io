@@ -104,7 +104,7 @@
   news2:
 
 - title: "Coefficient tree regression for generalized linear models"
-  image: 10pieces.eps
+  image: 10pieces.png
   description: >
     Large regression data sets are now commonplace, with so many predictors that they cannot or should not all be included individually. 
     In practice, derived predictors are relevant as meaningful features or, at the very least, as a form of regularized approximation of 
@@ -122,7 +122,7 @@
   news2:
 
 - title: "Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures"
-  image: austin_ToIHT_CC.pdf
+  image: austin.png
   description: >
     Community mitigation strategies to combat COVID-19, ranging from healthy hygiene to shelter-in-place orders, exact substantial socioeconomic costs. 
     Judicious implementation and relaxation of restrictions amplify their public health benefits while reducing costs. We derive optimal 
