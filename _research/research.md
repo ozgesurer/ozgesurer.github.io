@@ -7,8 +7,6 @@ author_profile: true
 
 ## Selected abstracts
 
-(For a full list of publications see [below](#full-list))
-
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
 

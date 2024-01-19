@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ozge Surer / Personal Website"
+title                    : "Özge Sürer / Personal Website"
 title_separator          : "-"
-name                     : &name "Ozge Surer"
+name                     : &name "Özge Sürer"
 description              : &description "Assistant Professor at Miami University"
 url                      : https://ozgesurer.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
