@@ -141,7 +141,7 @@
   highlight: 1
   news2:
 
-  - title: "Calibration using emulation of filtered simulation results"
+- title: "Calibration using emulation of filtered simulation results"
   image: winsim.png
   description: >
     Calibration of parameters in simulation models is necessary to develop sharp predictions with quantified uncertainty. 
@@ -156,5 +156,26 @@
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9715296
     display: Proceedings of Winter Simulation Conference (WSC) (2021)
+  highlight: 1
+  news2:
+
+- title: "Designing sustainable energy regions using genetic algorithms and location-allocation approach"
+  image: energy.png
+  description: >
+    Geographical areas have diverse green energy resources and different levels of energy consumptions. 
+    An important challenge to satisfy the energy demand using green energy resources is to balance energy supply and demand. 
+    Territory design deals with the problem of grouping geographic areas into larger geographic clusters called territories 
+    in such a way that the grouping is acceptable according to a planning criterion. The aim of this study is to group geographic 
+    areas so that energy requirement in a geographic cluster matches the available green energy potential in the same cluster. 
+    In this way, investments may be supported through region specific policies. The problem is formulated as a mixed-integer 
+    linear programming model. A location-allocation approach is employed to solve the model. The location and allocation problems 
+    are solved iteratively. In order to solve the initial location problem, a Genetic Algorithm is developed to find the results 
+    of the p-median problem. Then, the allocation problem is solved optimally using the ILOG Cplex solver. The territory design 
+    problem is solved for Turkey and the results of various numbers of territories are compared. Among those trials, 10 
+    territories result in the best balance of demand and supply.
+  authors: Seda Yanik, Özge Sürer, Basar Oztaysi.
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0360544215017612
+    display: Energy (2016)
   highlight: 1
   news2:
