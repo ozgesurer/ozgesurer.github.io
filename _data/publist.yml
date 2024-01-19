@@ -103,7 +103,7 @@
   highlight: 1
   news2:
 
-- title: "CCoefficient tree regression for generalized linear models"
+- title: "Coefficient tree regression for generalized linear models"
   image: bestworstresponse6.png
   description: >
     Large regression data sets are now commonplace, with so many predictors that they cannot or should not all be included individually. 
@@ -118,5 +118,25 @@
   link:
     url: https://onlinelibrary.wiley.com/doi/10.1002/sam.11534
     display: Statistical Analysis and Data Mining (2021)
+  highlight: 1
+  news2:
+
+- title: "Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures"
+  image: bestworstresponse6.png
+  description: >
+    Community mitigation strategies to combat COVID-19, ranging from healthy hygiene to shelter-in-place orders, exact substantial socioeconomic costs. 
+    Judicious implementation and relaxation of restrictions amplify their public health benefits while reducing costs. We derive optimal 
+    strategies for toggling between mitigation stages using daily COVID-19 hospital admissions. With public compliance, the policy triggers 
+    ensure adequate intensive care unit capacity with high probability while minimizing the duration of strict mitigation measures. 
+    In comparison, we show that other sensible COVID-19 staging policies, including France’s ICU-based thresholds and a widely adopted 
+    indicator for reopening schools and businesses, require overly restrictive measures or trigger strict stages too late to avert 
+    catastrophic surges. As proof-of-concept, we describe the optimization and maintenance of the staged alert system that has guided 
+    COVID-19 policy in a large US city (Austin, Texas) since May 2020. As cities worldwide face future pandemic waves, our findings 
+    provide a robust strategy for tracking COVID-19 hospital admissions as an early indicator of hospital surges and enacting staged 
+    measures to ensure integrity of the health system, safety of the health workforce, and public confidence.
+  authors: Haoxiang Yang, Özge Sürer, Daniel Duque, David Morton, Bismark Singh, Spencer Fox, Remy Pasco, Kelly Pierce, Paul Rathouz, Zhanwei Du, Michael Pignone, Mark E. Escott, Stephen I. Adler, Clairborne Johnston, Lauren Ancel Meyers.
+  link:
+    url: https://www.nature.com/articles/s41467-021-23989-x
+    display: Nature Communications (2021)
   highlight: 1
   news2:
