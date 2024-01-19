@@ -77,7 +77,7 @@
   news2:
 
 - title: "Coefficient tree regression: fast, accurate and interpretable predictive modeling"
-  image: bestworstresponse6.png
+  image: ctr_tree.png
   description: >
     The proliferation of data collection technologies often results in large data sets with many observations and many variables. 
     In practice, highly relevant engineered features are often groups of predictors that share a common regression coefficient 
