@@ -1,3 +1,16 @@
+- title: "Performance analysis of sequential experimental design for calibration in parallel computing environments"
+  image:
+  location: >
+    INFORMS Annual Meeting, Phoenix, AZ
+  date: >
+    October, 2023
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
 - title: "Sequential Bayesian experimental design for calibration of expensive simulation models"
   image:
   location: >
@@ -55,7 +68,7 @@
   location: >
     SIAM Conference on Uncertainty Quantification, Atlanta, GA
   date: >
-    October, 2022
+    April, 2022
   presenter: 
   link:
     url: 
@@ -68,7 +81,150 @@
   location: >
     SIAM Conference on Parallel Processing for Scientific Computing (Virtual)
   date: >
-    October, 2022
+    February, 2022
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Calibration using emulation of filtered simulation results"
+  image:
+  location: >
+    Winter Simulation Conference, Phoenix, AZ
+  date: >
+    December, 2021
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Calibration using emulation of filtered simulation results"
+  image:
+  location: >
+    INFORMS Annual Meeting, Anaheim, CA
+  date: >
+    October, 2021
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Discovering group structure in longitudinal data"
+  image:
+  location: >
+    INFORMS Workshop on Data Mining and Decision Analytics, Anaheim, CA
+  date: >
+    October, 2021
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Coefficient tree regression for discovering structure in generalized linear models"
+  image:
+  location: >
+    INFORMS Annual Meeting, Seattle, WA
+  date: >
+    October, 2019
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Discovering structure in longitudinal data via coefficient tree regression"
+  image:
+  location: >
+    INFORMS Annual Meeting, Seattle, WA
+  date: >
+    October, 2019
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Coefficient tree regression for discovering hidden structure"
+  image:
+  location: >
+    INFORMS Annual Meeting, Phoenix, AZ
+  date: >
+    November, 2018
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Multistakeholder recommendation with provider constraints"
+  image:
+  location: >
+     The 12th ACM Conference on Recommender Systems, Vancouver, Canada
+  date: >
+    October, 2018
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Coefficient tree regression for discovering hidden structure"
+  image:
+  location: >
+     The Midwest Machine Learning Symposium, Chicago, IL
+  date: >
+    June, 2018
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Improving similarity measures using ontological data"
+  image:
+  location: >
+     The 11th ACM Conference on Recommender Systems, Como, Italy
+  date: >
+    August, 2017
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Event and clock-based representations in mathematical optimization"
+  image:
+  location: >
+      The 34th National Conference for Operations Research and Industrial Engineering, Bursa, Turkey
+  date: >
+    June, 2014
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Simulated annealing algorithm with variable cluster number and comparison with k-means algorithm"
+  image:
+  location: >
+      The 26th European Conference on Operational Research, Rome, Italy
+  date: >
+    July, 2013
   presenter: 
   link:
     url: 
