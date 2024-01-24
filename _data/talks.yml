@@ -11,12 +11,64 @@
   type: stat
   news2:
 
-  - title: "Sequential Bayesian experimental design for calibration of expensive expensive physics models"
+- title: "Sequential Bayesian experimental design for calibration of expensive expensive physics models"
   image:
   location: >
     Information and Statistics in Nuclear Experiment and Theory (ISNET) Conference, St. Louis, MO
   date: >
     May, 2023
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "The Bayesian analysis of nuclear dynamics framework"
+  image:
+  location: >
+    2022 Fall Meeting of the Division of Nuclear Physics of the American Physical Society, New Orleans, LA
+  date: >
+    October, 2022
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Batch sequential calibration of a computationally intensive simulation model using parallel computing"
+  image:
+  location: >
+    INFORMS Annual Meeting, Indianapolis, IN
+  date: >
+    October, 2022
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "A sequential approach to calibration of a computationally intensive model"
+  image:
+  location: >
+    SIAM Conference on Uncertainty Quantification, Atlanta, GA
+  date: >
+    October, 2022
+  presenter: 
+  link:
+    url: 
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Calibration of a computationally intensive model with parallel computing aspects"
+  image:
+  location: >
+    SIAM Conference on Parallel Processing for Scientific Computing (Virtual)
+  date: >
+    October, 2022
   presenter: 
   link:
     url: 
