@@ -26,8 +26,7 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
 **News:**
 {% for new in site.data.news %}
 
-  <a href="{{new.date }}" target="_blank"><em>{{ new.headline }}</em></a> <br />
-  {{ talk.location }}<br />{{ talk.date}}
+  {{ new.date }}<br />{{ new.headline}}
 
 {% endfor %}
 
