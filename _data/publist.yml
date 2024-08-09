@@ -1,5 +1,5 @@
 - title: "Simulation experiment design for calibration via active learning"
-  image: Figure2.jpg
+  image: Figure2b_29.png
   description: >
     Simulation models often have parameters as input and return outputs to understand the behavior of complex systems. 
     Calibration is the process of estimating the values of the parameters in a simulation model in light of observed data 
