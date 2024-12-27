@@ -1,3 +1,11 @@
+- date: October 21, 2024
+  headline: > 
+    Moses Chan and I co-organized a two-part session at the INFORMS Annual Meeting, Seattle, 2024.  
+    The sessions titled "Computational/Statistical Methods for Uncertainty Quantification" covered 
+    a range of emulation and calibration strategies in tackling searches in high-dimensional parameter space, 
+    stochastic simulation data, computationally effective design constructions, multi-fidelity experiments, and more.  
+    Some of the presented works can be found via <a href="https://tinyurl.com/informs2024UQ">this post</a>.
+
 - date: July 26, 2024
   headline: >
     Our NSF grant "Advancing Theory for Nuclear Double-Beta Decay (@NDB)" has been awarded! You can read the details about this exciting project <a href="https://doublebetacollaboration.wordpress.com">here</a>.
