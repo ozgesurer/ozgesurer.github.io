@@ -1,3 +1,11 @@
+- date: December 17-18, 2024
+  headline: > 
+    I was invited to the BAND-Nuclear Data Workshop to meet with scientists interested in 
+    applying statistical learning techniques to physics models. I presented on novel 
+    computer experiment design approaches and their implementation in our Python package, PUQ. 
+    A list of presentations from the workshop, along with PDFs of some of the slides, can be found
+    <a href="https://github.com/bandframework/bandframework.github.io/blob/main/_pages/Data2024Workshop.md">here</a>.
+
 - date: October 21, 2024
   headline: > 
     Moses Chan and I co-organized a two-part session at the INFORMS Annual Meeting, Seattle, 2024.  
