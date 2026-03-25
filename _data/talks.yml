@@ -1,5 +1,19 @@
 
-- title: "A dynamic calibration framework for digital twins using active learning and conformal prediction"
+
+- title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
+  image:
+  location: >
+   2026 SIAM Conference on Uncertainty Quantification (SIAM UQ 2026), Minneapolis, MN
+  date: >
+    March, 2026
+  presenter:
+  link:
+    url: https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=85940
+  highlight: 0
+  type: stat
+  news2:
+
+- title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
   image:
   location: >
    2025 Winter Simulation Conference (WSC 2025), Seattle, WA
