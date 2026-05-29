@@ -1,5 +1,18 @@
 
 
+- title: "Active learning for data-efficient calibration of stochastic simulation models"
+  image:
+  location: >
+   The Annual ASA/IMS Spring Research Conference (SRC), Clemson, SC
+  date: >
+    May, 2026
+  presenter:
+  link:
+    url: https://sites.google.com/view/src2026/program
+  highlight: 0
+  type: stat
+  news2:
+
 - title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
   image:
   location: >
