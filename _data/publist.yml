@@ -1,3 +1,27 @@
+- title: "Active learning for data-efficient calibration of stochastic simulation models"
+  image: Figure2.jpeg
+  description: >
+    Simulation-based calibration aims to infer unknown parameters of complex simulation models by aligning model outputs 
+    with real-world observations. When simulation runs are computationally expensive, statistical emulators trained on 
+    simulation data are used to efficiently approximate the model. An intelligent, adaptive selection of simulation 
+    inputs for building the emulator can substantially improve the efficiency of the calibration process. This task is 
+    particularly challenging for stochastic simulations with noisy outputs, since both selecting new input locations (exploration) 
+    and allocating repeated runs at existing inputs (replication) are essential for efficiently learning the input-output relationship. 
+    In this paper, we introduce an active learning framework that adaptively balances exploration and replication for 
+    data-efficient calibration. Our uncertainty-aware acquisition criterion targets learning the posterior density of the 
+    unknown simulation parameters, and we derive two corresponding forms of the acquisition function for exploration and replication. 
+    Building on these, we propose a strategy that, at each stage of the sequential design, chooses between exploration and replication 
+    to most effectively reduce the uncertainty in the estimate of the posterior density of the simulation parameters. 
+    Experiments on synthetic benchmarks and a real epidemiological model demonstrate that our approach significantly improves 
+    learning of the posterior distribution of the simulation parameters while reducing the number of required simulations, 
+    making it well-suited for expensive stochastic simulation settings.
+  authors: Özge Sürer
+  link:
+    url: https://doi.org/10.1080/00224065.2026.2710639
+    display:  Journal of Quality Technology (2026)
+  highlight: 1
+  news2:
+
 - title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
   image: Figure4a.png
   description: >
