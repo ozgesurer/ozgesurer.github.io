@@ -15,7 +15,7 @@
     Experiments on synthetic benchmarks and a real epidemiological model demonstrate that our approach significantly improves 
     learning of the posterior distribution of the simulation parameters while reducing the number of required simulations, 
     making it well-suited for expensive stochastic simulation settings.
-  authors: Özge Sürer
+  authors: Özge Sürer.
   link:
     url: https://doi.org/10.1080/00224065.2026.2710639
     display:  Journal of Quality Technology (2026)
@@ -34,7 +34,7 @@
     are updated using an efficient AL strategy. The framework reduces computational overhead by avoiding 
     unnecessary DT evaluations while maintaining accurate system representation. We demonstrate the effectiveness 
     of the proposed approach in achieving adaptive, cost-efficient DT calibration over time.
-  authors: Özge Sürer, Xi Chen, Sara Shashaani 
+  authors: Özge Sürer, Xi Chen, Sara Shashaani. 
   link:
     url: https://doi.org/10.1109/WSC68292.2025.11338975
     display:  Proceedings of the Winter Simulation Conference (WSC) (2025)
