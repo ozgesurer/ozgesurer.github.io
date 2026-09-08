@@ -1,5 +1,6 @@
 ---
 permalink: /
+layout: home
 title: "About me"
 excerpt: "About me"
 author_profile: true
@@ -8,7 +9,11 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor of [Analytics at Miami University](https://www.miamioh.edu/fsb/academics/isa/). Prior to this appointment, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering. My postdoctoral research focused on applying and developing novel techniques based on Bayesian uncertainty quantification and computational statistics. I completed my Ph.D. in December 2020 in the Industrial Engineering and Management Sciences Department at Northwestern University. The objective of my research is to develop new statistical methods in the presence of data. 
+<section class="home__about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About</h2>
+
+  <p>I am an Assistant Professor of <a href="https://www.miamioh.edu/fsb/academics/isa/">Analytics at Miami University</a>. Prior to this appointment, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering. My postdoctoral research focused on applying and developing novel techniques based on Bayesian uncertainty quantification and computational statistics. I completed my Ph.D. in December 2020 in the Industrial Engineering and Management Sciences Department at Northwestern University. The objective of my research is to develop new statistical methods in the presence of data.</p>
+</section>
 
 **Education:**
   - PhD in Industrial Engineering and Management Sciences
@@ -29,4 +34,3 @@ I am an Assistant Professor of [Analytics at Miami University](https://www.miami
   {{ new.date }}<br />{{ new.headline}}
 
 {% endfor %}
-
