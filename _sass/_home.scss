@@ -34,15 +34,6 @@
   min-width: 0;
 }
 
-.home__eyebrow {
-  margin: 0 0 0.5rem;
-  color: $gray;
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .home__title {
   margin: 0;
   font-size: 2.75rem;
@@ -56,10 +47,12 @@
   font-weight: 600;
 }
 
-.home__location {
-  margin: 0.25rem 0 0;
+.home__tagline {
+  max-width: 42rem;
+  margin: 0.85rem 0 0;
   color: $gray;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .home__profile-links {
