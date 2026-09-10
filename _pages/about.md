@@ -12,7 +12,9 @@ redirect_from:
 <section class="home__about" aria-labelledby="about-heading">
   <h2 id="about-heading">About</h2>
 
-  <p>I am an Assistant Professor of <a href="https://www.miamioh.edu/fsb/academics/isa/">Analytics at Miami University</a>. Prior to this appointment, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering. My postdoctoral research focused on applying and developing novel techniques based on Bayesian uncertainty quantification and computational statistics. I completed my Ph.D. in December 2020 in the Industrial Engineering and Management Sciences Department at Northwestern University. The objective of my research is to develop new statistical methods in the presence of data.</p>
+  <p>My research focuses on developing statistical methods for complex computer models and simulation-based systems. I am particularly interested in uncertainty quantification, statistical calibration, computer experiments, and active learning, with applications to scientific computing and digital twins.</p>
+
+  <p>Prior to joining Miami University, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering (NAISE), where I worked on Bayesian uncertainty quantification and computational statistics. I received my Ph.D. in Industrial Engineering and Management Sciences from Northwestern University in 2020.</p>
 </section>
 
 **Education:**
