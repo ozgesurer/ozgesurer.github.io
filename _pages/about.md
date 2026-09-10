@@ -62,9 +62,15 @@ redirect_from:
   </div>
 </section>
 
-**News:**
-{% for new in site.data.news %}
+<section class="home__news" aria-labelledby="latest-news-heading">
+  <h2 id="latest-news-heading">Latest News</h2>
 
-  {{ new.date }}<br />{{ new.headline}}
-
-{% endfor %}
+  <div class="home__news-list">
+    {% for new in site.data.news limit: 4 %}
+      <article class="home__news-item">
+        <p class="home__news-date">{{ new.date }}</p>
+        <p class="home__news-excerpt">{{ new.headline | markdownify | strip_html | strip_newlines | truncatewords: 35 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

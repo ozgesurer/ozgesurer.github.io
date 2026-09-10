@@ -176,6 +176,40 @@
   }
 }
 
+.home__news {
+  padding: 2.5rem 0 0.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.55rem;
+  }
+}
+
+.home__news-item {
+  padding: 1.25rem 0;
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.home__news-date {
+  margin: 0 0 0.4rem;
+  color: $gray;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.home__news-excerpt {
+  margin: 0;
+  color: $text-color;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
 @media (max-width: 600px) {
   .home {
     padding-top: 2rem;
@@ -214,7 +248,8 @@
   }
 
   .home__research,
-  .home__education {
+  .home__education,
+  .home__news {
     padding-top: 2rem;
   }
 
