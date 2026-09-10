@@ -7,7 +7,10 @@ author_profile: true
 
 {% for new in site.data.news %}
 
-  <a href="{{new.date }}" target="_blank"><em>{{ new.headline }}</em></a> <br />
-  {{ talk.location }}<br />{{ talk.date}}
+## {{ new.date }}
+
+{{ new.headline | markdownify }}
+
+{% unless forloop.last %}---{% endunless %}
 
 {% endfor %}

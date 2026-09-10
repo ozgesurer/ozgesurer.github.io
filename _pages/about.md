@@ -76,10 +76,18 @@ redirect_from:
             <p class="home__news-date">{{ new.date }}</p>
             {% capture news_text %}{{ new.headline | markdownify | strip_html | strip_newlines }}{% endcapture %}
             {% assign news_excerpt = news_text | split: ". " | first %}
+            {% assign news_remainder = news_text | remove_first: news_excerpt | remove_first: "." | strip %}
             <p class="home__news-excerpt">{{ news_excerpt }}.</p>
+            {% if news_remainder != "" %}
+              <details class="home__news-details">
+                <summary><span class="home__news-read-more">Read more</span><span class="home__news-show-less">Show less</span></summary>
+                <p>{{ news_remainder }}</p>
+              </details>
+            {% endif %}
           </article>
         {% endfor %}
       </div>
+      <a class="home__news-archive-link" href="{{ base_path }}/news/">View all news &rarr;</a>
     </section>
   </aside>
 </div>
