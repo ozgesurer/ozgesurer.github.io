@@ -17,18 +17,47 @@ redirect_from:
   <p>Prior to joining Miami University, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering (NAISE), where I worked on Bayesian uncertainty quantification and computational statistics. I received my Ph.D. in Industrial Engineering and Management Sciences from Northwestern University in 2020.</p>
 </section>
 
-**Education:**
-  - PhD in Industrial Engineering and Management Sciences
-      - *Northwestern University*, 2020
-  - MS in Industrial Engineering
-      - *Bogazici University*, 2014
-  - BS in Industrial Engineering
-      - *Istanbul Technical University*, 2011
+<section class="home__research" aria-labelledby="research-interests-heading">
+  <h2 id="research-interests-heading">Research Interests</h2>
 
-**Interests:**
-- Uncertainty quantification
-- Statistical computing
-- Statistical learning for large data sets
+  <div class="home__research-grid">
+    <div class="home__research-area">
+      <h3>Uncertainty Quantification</h3>
+      <p>Bayesian methods for quantifying uncertainty in complex computational models.</p>
+    </div>
+
+    <div class="home__research-area">
+      <h3>Computer Experiments &amp; Calibration</h3>
+      <p>Statistical design, emulation, and calibration of deterministic and stochastic computer models.</p>
+    </div>
+
+    <div class="home__research-area">
+      <h3>Active &amp; Sequential Learning</h3>
+      <p>Adaptive experimental design for efficiently learning from expensive simulations and data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="home__education" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+
+  <div class="home__education-grid">
+    <div class="home__education-entry">
+      <h3>Ph.D., Industrial Engineering and Management Sciences</h3>
+      <p>Northwestern University <span aria-hidden="true">&middot;</span> 2020</p>
+    </div>
+
+    <div class="home__education-entry">
+      <h3>M.S., Industrial Engineering</h3>
+      <p>Boğaziçi University <span aria-hidden="true">&middot;</span> 2014</p>
+    </div>
+
+    <div class="home__education-entry">
+      <h3>B.S., Industrial Engineering</h3>
+      <p>Istanbul Technical University <span aria-hidden="true">&middot;</span> 2011</p>
+    </div>
+  </div>
+</section>
 
 **News:**
 {% for new in site.data.news %}

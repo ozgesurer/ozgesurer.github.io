@@ -112,6 +112,56 @@
   }
 }
 
+.home__research,
+.home__education {
+  padding: 2.5rem 0 0.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.55rem;
+  }
+}
+
+.home__research-grid,
+.home__education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.home__research-area {
+  padding-top: 1rem;
+  border-top: 2px solid $border-color;
+
+  h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    color: $gray;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+.home__education-entry {
+  h3 {
+    margin: 0 0 0.45rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  p {
+    margin: 0;
+    color: $gray;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 600px) {
   .home {
     padding-top: 2rem;
@@ -145,5 +195,16 @@
 
   .home__about {
     padding-top: 2.25rem;
+  }
+
+  .home__research,
+  .home__education {
+    padding-top: 2rem;
+  }
+
+  .home__research-grid,
+  .home__education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
