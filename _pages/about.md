@@ -43,18 +43,21 @@ redirect_from:
 
   <div class="home__education-grid">
     <div class="home__education-entry">
-      <h3>Ph.D., Industrial Engineering and Management Sciences</h3>
-      <p>Northwestern University <span aria-hidden="true">&middot;</span> 2020</p>
+      <h3>Ph.D.</h3>
+      <p class="home__education-field">Industrial Engineering and Management Sciences</p>
+      <p class="home__education-meta">Northwestern University <span aria-hidden="true">&middot;</span> 2020</p>
     </div>
 
     <div class="home__education-entry">
-      <h3>M.S., Industrial Engineering</h3>
-      <p>Boğaziçi University <span aria-hidden="true">&middot;</span> 2014</p>
+      <h3>M.S.</h3>
+      <p class="home__education-field">Industrial Engineering</p>
+      <p class="home__education-meta">Boğaziçi University <span aria-hidden="true">&middot;</span> 2014</p>
     </div>
 
     <div class="home__education-entry">
-      <h3>B.S., Industrial Engineering</h3>
-      <p>Istanbul Technical University <span aria-hidden="true">&middot;</span> 2011</p>
+      <h3>B.S.</h3>
+      <p class="home__education-field">Industrial Engineering</p>
+      <p class="home__education-meta">Istanbul Technical University <span aria-hidden="true">&middot;</span> 2011</p>
     </div>
   </div>
 </section>

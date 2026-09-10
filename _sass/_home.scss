@@ -149,12 +149,19 @@
 
 .home__education-entry {
   h3 {
-    margin: 0 0 0.45rem;
-    font-size: 0.95rem;
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
     line-height: 1.45;
   }
 
-  p {
+  .home__education-field {
+    margin: 0 0 0.35rem;
+    color: $text-color;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .home__education-meta {
     margin: 0;
     color: $gray;
     font-size: 0.85rem;
