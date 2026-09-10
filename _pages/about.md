@@ -9,13 +9,15 @@ redirect_from:
   - /about.html
 ---
 
-<section class="home__about" aria-labelledby="about-heading">
-  <h2 id="about-heading">About</h2>
+<div class="home__columns">
+  <div class="home__primary">
+    <section class="home__about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
 
-  <p>My research focuses on developing statistical methods for complex computer models and simulation-based systems. I am particularly interested in uncertainty quantification, statistical calibration, computer experiments, and active learning, with applications to scientific computing and digital twins.</p>
+      <p>My research focuses on developing statistical methods for complex computer models and simulation-based systems. I am particularly interested in uncertainty quantification, statistical calibration, computer experiments, and active learning, with applications to scientific computing and digital twins.</p>
 
-  <p>Prior to joining Miami University, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering (NAISE), where I worked on Bayesian uncertainty quantification and computational statistics. I received my Ph.D. in Industrial Engineering and Management Sciences from Northwestern University in 2020.</p>
-</section>
+      <p>Prior to joining Miami University, I was a postdoctoral research fellow at the Northwestern Argonne Institute of Science and Engineering (NAISE), where I worked on Bayesian uncertainty quantification and computational statistics. I received my Ph.D. in Industrial Engineering and Management Sciences from Northwestern University in 2020.</p>
+    </section>
 
 <section class="home__research" aria-labelledby="research-interests-heading">
   <h2 id="research-interests-heading">Research Interests</h2>
@@ -62,15 +64,22 @@ redirect_from:
   </div>
 </section>
 
-<section class="home__news" aria-labelledby="latest-news-heading">
-  <h2 id="latest-news-heading">Latest News</h2>
-
-  <div class="home__news-list">
-    {% for new in site.data.news limit: 4 %}
-      <article class="home__news-item">
-        <p class="home__news-date">{{ new.date }}</p>
-        <p class="home__news-excerpt">{{ new.headline | markdownify | strip_html | strip_newlines | truncatewords: 35 }}</p>
-      </article>
-    {% endfor %}
   </div>
-</section>
+
+  <aside class="home__secondary">
+    <section class="home__news" aria-labelledby="latest-news-heading">
+      <h2 id="latest-news-heading">Latest News</h2>
+
+      <div class="home__news-list">
+        {% for new in site.data.news limit: 4 %}
+          <article class="home__news-item">
+            <p class="home__news-date">{{ new.date }}</p>
+            {% capture news_text %}{{ new.headline | markdownify | strip_html | strip_newlines }}{% endcapture %}
+            {% assign news_excerpt = news_text | split: ". " | first %}
+            <p class="home__news-excerpt">{{ news_excerpt }}.</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </aside>
+</div>
