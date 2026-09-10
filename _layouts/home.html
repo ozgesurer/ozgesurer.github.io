@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main" class="home" role="main">
+  <section class="home__intro" aria-labelledby="home-intro-title">
+    <div class="home__portrait">
+      <img src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ site.name }}" width="190" height="240">
+    </div>
+
+    <div class="home__introduction">
+      <h1 id="home-intro-title" class="home__title">{{ site.name }}</h1>
+      <p class="home__role">Assistant Professor <span aria-hidden="true">&middot;</span> Miami University</p>
+      <p class="home__tagline">Developing statistical methods for learning from complex simulations and data.</p>
+
+      <nav class="home__profile-links" aria-label="Professional profiles">
+        {% if site.author.googlescholar %}
+          <a href="{{ site.author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+        {% endif %}
+        {% if site.author.orcid %}
+          <a href="{{ site.author.orcid }}"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a>
+        {% endif %}
+        {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+        {% endif %}
+        <a class="home__profile-link--primary" href="{{ base_path }}/files/CV_Surer.pdf"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> Download CV</a>
+      </nav>
+    </div>
+  </section>
+
+  <div class="home__content">
+    {{ content }}
+  </div>
+</main>

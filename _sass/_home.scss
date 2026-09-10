@@ -1,0 +1,316 @@
+/* ============================================================================
+   HOMEPAGE
+   ========================================================================== */
+
+.home {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem 1rem 4rem;
+}
+
+.home__intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.home__portrait {
+  flex: 0 0 190px;
+  width: 190px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    display: block;
+    width: 190px;
+    height: 240px;
+    margin: 0;
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
+}
+
+.home__introduction {
+  min-width: 0;
+}
+
+.home__title {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.1;
+}
+
+.home__role {
+  margin: 0.75rem 0 0;
+  color: $text-color;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.home__tagline {
+  max-width: 42rem;
+  margin: 0.85rem 0 0;
+  color: $gray;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.home__profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.85rem;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    color: $text-color;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: $link-color;
+      color: $link-color-hover;
+    }
+  }
+
+  .home__profile-link--primary {
+    border-color: $link-color;
+    background-color: $link-color;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: $link-color-hover;
+      color: #fff;
+    }
+  }
+}
+
+.home__content {
+  max-width: none;
+}
+
+.home__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: 4rem;
+  padding-top: 3rem;
+}
+
+.home__primary,
+.home__secondary {
+  min-width: 0;
+}
+
+.home__about {
+  padding: 0 0 1rem;
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.55rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+}
+
+.home__research,
+.home__education {
+  padding: 2.5rem 0 0.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.55rem;
+  }
+}
+
+.home__research-grid,
+.home__education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.home__research-area {
+  padding-top: 1rem;
+  border-top: 2px solid $border-color;
+
+  h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    color: $gray;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+.home__education-entry {
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .home__education-field {
+    margin: 0 0 0.35rem;
+    color: $text-color;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .home__education-meta {
+    margin: 0;
+    color: $gray;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+.home__news {
+  padding: 0 0 0.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.55rem;
+  }
+}
+
+.home__news-item {
+  padding: 1.25rem 0;
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.home__news-date {
+  margin: 0 0 0.4rem;
+  color: $gray;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.home__news-excerpt {
+  margin: 0;
+  color: $text-color;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.home__news-details {
+  margin-top: 0.45rem;
+  color: $text-color;
+  font-size: 0.9rem;
+  line-height: 1.65;
+
+  summary {
+    width: fit-content;
+    color: $link-color;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $link-color-hover;
+    }
+  }
+
+  p {
+    margin: 0.75rem 0 0;
+  }
+
+  &[open] .home__news-read-more,
+  &:not([open]) .home__news-show-less {
+    display: none;
+  }
+}
+
+.home__news-archive-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .home__columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .home__news {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding-top: 2rem;
+  }
+
+  .home__intro {
+    display: block;
+    padding-bottom: 2.25rem;
+  }
+
+  .home__portrait {
+    width: 140px;
+    height: 177px;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 140px;
+      height: 177px;
+    }
+  }
+
+  .home__title {
+    font-size: 2.15rem;
+  }
+
+  .home__profile-links {
+    align-items: stretch;
+
+    a {
+      justify-content: center;
+    }
+  }
+
+  .home__about {
+    padding-top: 0;
+  }
+
+  .home__research,
+  .home__education {
+    padding-top: 2rem;
+  }
+
+  .home__research-grid,
+  .home__education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
