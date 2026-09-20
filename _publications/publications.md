@@ -10,10 +10,10 @@ intro: "Peer-reviewed work in simulation, statistical learning, and data-driven 
   {% assign year_parts = publication.link.display | split: "(" %}
   {% assign year = year_parts | last | remove: ")" | strip %}
   {% if year != current_year %}
-    {% unless forloop.first %}</div></section>{% endunless %}
-    <section class="publications__year" aria-labelledby="publications-{{ year }}">
-      <h2 id="publications-{{ year }}">{{ year }}</h2>
-      <div class="publications__year-list">
+{% unless forloop.first %}</div></section>{% endunless %}
+<section class="publications__year" aria-labelledby="publications-{{ year }}">
+<h2 id="publications-{{ year }}">{{ year }}</h2>
+<div class="publications__year-list">
     {% assign current_year = year %}
   {% endif %}
 
@@ -39,5 +39,5 @@ intro: "Peer-reviewed work in simulation, statistical learning, and data-driven 
     </div>
   </article>
 
-  {% if forloop.last %}</div></section>{% endif %}
+{% if forloop.last %}</div></section>{% endif %}
 {% endfor %}
