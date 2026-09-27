@@ -1,0 +1,110 @@
+/* ============================================================================
+   TALKS
+   ========================================================================== */
+
+.talks {
+  max-width: 52rem;
+  padding-bottom: 3rem;
+}
+
+.talks__intro {
+  max-width: 40rem;
+  margin: 0.75rem 0 3rem;
+  color: $gray;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.talks__year {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  column-gap: 2.5rem;
+  padding: 2rem 0;
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.talks__year-heading {
+  margin: 0;
+  color: $text-color;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.talks__list {
+  min-width: 0;
+}
+
+.talks__item {
+  padding: 1.35rem 0;
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.talks__title {
+  margin: 0 0 0.45rem;
+  color: $darker-gray;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.talks__venue {
+  margin: 0 0 0.35rem;
+  color: $text-color;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.talks__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+  color: $gray;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.archive .talks__link {
+  color: $link-color;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .talks__intro {
+    margin-bottom: 2.25rem;
+  }
+
+  .talks__year {
+    display: block;
+    padding: 1.75rem 0;
+  }
+
+  .talks__year-heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .talks__item {
+    padding: 1.15rem 0;
+  }
+}
