@@ -2,8 +2,10 @@
 
 - title: "Active learning for data-efficient calibration of stochastic simulation models"
   image:
+  venue: >
+    The Annual ASA/IMS Spring Research Conference (SRC)
   location: >
-   The Annual ASA/IMS Spring Research Conference (SRC), Clemson, SC
+    Clemson, SC
   date: >
     May, 2026
   presenter:
@@ -15,8 +17,10 @@
 
 - title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
   image:
+  venue: >
+    2026 SIAM Conference on Uncertainty Quantification (SIAM UQ 2026)
   location: >
-   2026 SIAM Conference on Uncertainty Quantification (SIAM UQ 2026), Minneapolis, MN
+    Minneapolis, MN
   date: >
     March, 2026
   presenter:
@@ -28,8 +32,10 @@
 
 - title: "Dynamic calibration framework for digital twins using active learning and conformal prediction"
   image:
+  venue: >
+    2025 Winter Simulation Conference (WSC 2025)
   location: >
-   2025 Winter Simulation Conference (WSC 2025), Seattle, WA
+    Seattle, WA
   date: >
     December, 2025
   presenter:
@@ -41,8 +47,10 @@
   
 - title: "Designing computer experiments for calibration"
   image:
+  venue: >
+    ISNET-11: Information and Statistics in Nuclear Experiment and Theory, at ECT*
   location: >
-   ISNET-11: Information and Statistics in Nuclear Experiment and Theory, at ECT*, Trento, Italy
+    Trento, Italy
   date: >
     November, 2025
   presenter:
@@ -54,8 +62,10 @@
 
 - title: "Designing real and numerical experiments with uncertainties in mind"
   image:
+  venue: >
+    Fall Meeting of the APS Division of Nuclear Physics, Workshop: Systematic and Model Uncertainties in Nuclear Experiment and Theory: new tools, techniques, and opportunities for collaboration
   location: >
-   Fall Meeting of the APS Division of Nuclear Physics, Workshop: Systematic and Model Uncertainties in Nuclear Experiment and Theory: new tools, techniques, and opportunities for collaboration, Chicago, IL
+    Chicago, IL
   date: >
     October, 2025
   presenter:
@@ -67,8 +77,10 @@
 
 - title: "Batch sequential experimental design for calibration of stochastic simulation models"
   image:
+  venue: >
+    North Carolina State University, Industrial and Systems Engineering Seminar Series
   location: >
-   North Carolina State University, Industrial and Systems Engineering Seminar Series, Raleigh, NC
+    Raleigh, NC
   date: >
     September, 2025
   presenter:
@@ -80,8 +92,10 @@
   
 - title: "Batch sequential experimental design for calibration of stochastic simulation models"
   image:
+  venue: >
+    The Joint Statistical Meetings (JSM)
   location: >
-   The Joint Statistical Meetings (JSM), Nashville, TN
+    Nashville, TN
   date: >
     August, 2025
   presenter:
@@ -93,8 +107,10 @@
   
 - title: "Simulation experiment design for calibration via active learning"
   image:
+  venue: >
+    The Quality and Productivity Research Conference (QPRC)
   location: >
-   The Quality and Productivity Research Conference (QPRC), Seattle, WA
+    Seattle, WA
   date: >
     June, 2025
   presenter: 
@@ -106,8 +122,10 @@
 
 - title: "Batch sequential experimental design for calibration of stochastic simulation models"
   image:
+  venue: >
+    The Annual ASA/IMS Spring Research Conference (SRC)
   location: >
-   The Annual ASA/IMS Spring Research Conference (SRC), New York, NY
+    New York, NY
   date: >
     June, 2025
   presenter: 
@@ -119,8 +137,10 @@
 
 - title: "Simulation experiment design for calibration via active learning"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-   INFORMS Annual Meeting, Seattle, WA
+    Seattle, WA
   date: >
     October, 2024
   presenter: 
@@ -132,8 +152,10 @@
 
 - title: "Simulation experiment design for calibration via active learning"
   image:
+  venue: >
+    Fall Technical Conference (FTC)
   location: >
-   Fall Technical Conference (FTC), Nashville, TN
+    Nashville, TN
   date: >
     October, 2024
   presenter: 
@@ -145,8 +167,10 @@
   
 - title: "Simulation experiment design for calibration via active learning"
   image:
+  venue: >
+    The Joint Statistical Meetings (JSM)
   location: >
-   The Joint Statistical Meetings (JSM), Portland, OR
+    Portland, OR
   date: >
     August, 2024
   presenter: 
@@ -158,8 +182,10 @@
   
 - title: "Sequential Bayesian experimental design for calibration of expensive simulation models"
   image:
+  venue: >
+    The Design and Analysis of Experiments (DAE) Conference
   location: >
-    The Design and Analysis of Experiments (DAE) Conference, Blacksburg, VA
+    Blacksburg, VA
   date: >
     May, 2024
   presenter: 
@@ -171,8 +197,10 @@
 
 - title: "Performance analysis of sequential experimental design for calibration in parallel computing environments"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Phoenix, AZ
+    Phoenix, AZ
   date: >
     October, 2023
   presenter: 
@@ -184,8 +212,10 @@
 
 - title: "Sequential Bayesian experimental design for calibration of expensive simulation models"
   image:
+  venue: >
+    The Center for Approximation and Mathematical Data Analytics (CAMDA) Conference
   location: >
-    The Center for Approximation and Mathematical Data Analytics (CAMDA) Conference, College Station, TX
+    College Station, TX
   date: >
     May, 2023
   presenter: 
@@ -197,8 +227,10 @@
 
 - title: "Sequential Bayesian experimental design for calibration of expensive expensive physics models"
   image:
+  venue: >
+    Information and Statistics in Nuclear Experiment and Theory (ISNET) Conference
   location: >
-    Information and Statistics in Nuclear Experiment and Theory (ISNET) Conference, St. Louis, MO
+    St. Louis, MO
   date: >
     May, 2023
   presenter: 
@@ -210,8 +242,10 @@
 
 - title: "The Bayesian analysis of nuclear dynamics framework"
   image:
+  venue: >
+    2022 Fall Meeting of the Division of Nuclear Physics of the American Physical Society
   location: >
-    2022 Fall Meeting of the Division of Nuclear Physics of the American Physical Society, New Orleans, LA
+    New Orleans, LA
   date: >
     October, 2022
   presenter: 
@@ -223,8 +257,10 @@
 
 - title: "Batch sequential calibration of a computationally intensive simulation model using parallel computing"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Indianapolis, IN
+    Indianapolis, IN
   date: >
     October, 2022
   presenter: 
@@ -236,8 +272,10 @@
 
 - title: "A sequential approach to calibration of a computationally intensive model"
   image:
+  venue: >
+    SIAM Conference on Uncertainty Quantification
   location: >
-    SIAM Conference on Uncertainty Quantification, Atlanta, GA
+    Atlanta, GA
   date: >
     April, 2022
   presenter: 
@@ -249,8 +287,10 @@
 
 - title: "Calibration of a computationally intensive model with parallel computing aspects"
   image:
+  venue: >
+    SIAM Conference on Parallel Processing for Scientific Computing
   location: >
-    SIAM Conference on Parallel Processing for Scientific Computing (Virtual)
+    Virtual
   date: >
     February, 2022
   presenter: 
@@ -262,8 +302,10 @@
 
 - title: "Calibration using emulation of filtered simulation results"
   image:
+  venue: >
+    Winter Simulation Conference
   location: >
-    Winter Simulation Conference, Phoenix, AZ
+    Phoenix, AZ
   date: >
     December, 2021
   presenter: 
@@ -275,8 +317,10 @@
 
 - title: "Calibration using emulation of filtered simulation results"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Anaheim, CA
+    Anaheim, CA
   date: >
     October, 2021
   presenter: 
@@ -288,8 +332,10 @@
 
 - title: "Discovering group structure in longitudinal data"
   image:
+  venue: >
+    INFORMS Workshop on Data Mining and Decision Analytics
   location: >
-    INFORMS Workshop on Data Mining and Decision Analytics, Anaheim, CA
+    Anaheim, CA
   date: >
     October, 2021
   presenter: 
@@ -301,8 +347,10 @@
 
 - title: "Coefficient tree regression for discovering structure in generalized linear models"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Seattle, WA
+    Seattle, WA
   date: >
     October, 2019
   presenter: 
@@ -314,8 +362,10 @@
 
 - title: "Discovering structure in longitudinal data via coefficient tree regression"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Seattle, WA
+    Seattle, WA
   date: >
     October, 2019
   presenter: 
@@ -327,8 +377,10 @@
 
 - title: "Coefficient tree regression for discovering hidden structure"
   image:
+  venue: >
+    INFORMS Annual Meeting
   location: >
-    INFORMS Annual Meeting, Phoenix, AZ
+    Phoenix, AZ
   date: >
     November, 2018
   presenter: 
@@ -340,8 +392,10 @@
 
 - title: "Multistakeholder recommendation with provider constraints"
   image:
+  venue: >
+    The 12th ACM Conference on Recommender Systems
   location: >
-     The 12th ACM Conference on Recommender Systems, Vancouver, Canada
+    Vancouver, Canada
   date: >
     October, 2018
   presenter: 
@@ -353,8 +407,10 @@
 
 - title: "Coefficient tree regression for discovering hidden structure"
   image:
+  venue: >
+    The Midwest Machine Learning Symposium
   location: >
-     The Midwest Machine Learning Symposium, Chicago, IL
+    Chicago, IL
   date: >
     June, 2018
   presenter: 
@@ -366,8 +422,10 @@
 
 - title: "Improving similarity measures using ontological data"
   image:
+  venue: >
+    The 11th ACM Conference on Recommender Systems
   location: >
-     The 11th ACM Conference on Recommender Systems, Como, Italy
+    Como, Italy
   date: >
     August, 2017
   presenter: 
@@ -379,8 +437,10 @@
 
 - title: "Event and clock-based representations in mathematical optimization"
   image:
+  venue: >
+    The 34th National Conference for Operations Research and Industrial Engineering
   location: >
-      The 34th National Conference for Operations Research and Industrial Engineering, Bursa, Turkey
+    Bursa, Turkey
   date: >
     June, 2014
   presenter: 
@@ -392,8 +452,10 @@
 
 - title: "Simulated annealing algorithm with variable cluster number and comparison with k-means algorithm"
   image:
+  venue: >
+    The 26th European Conference on Operational Research
   location: >
-      The 26th European Conference on Operational Research, Rome, Italy
+    Rome, Italy
   date: >
     July, 2013
   presenter: 
