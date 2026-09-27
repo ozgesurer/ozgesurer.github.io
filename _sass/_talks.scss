@@ -2,13 +2,6 @@
    TALKS
    ========================================================================== */
 
-.archive--full-width {
-  @include breakpoint($large) {
-    @include span(12 of 12);
-    padding-left: 0;
-  }
-}
-
 .talks {
   max-width: 52rem;
   padding-bottom: 3rem;
@@ -85,7 +78,7 @@
   line-height: 1.5;
 }
 
-.archive .talks__link {
+.talks__link {
   color: $link-color;
   font-weight: 600;
   text-decoration: none;
