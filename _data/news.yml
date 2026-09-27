@@ -1,4 +1,10 @@
+- date: May, 2026
+  sort_date: "2026-05-01"
+  headline: >
+    Received the <a href="https://miamioh.edu/fsb/news-events/2026/05/farmer-school-of-business-2026-faculty-award-winners-announced.html">James Robeson Junior Faculty Award for Research Excellence</a> from the Farmer School of Business.
+
 - date: June, 2025
+  sort_date: "2025-06-01"
   headline: >
     I am excited to serve as a Guest Editor for an upcoming *Special Issue of IISE Transactions 
     focused on Data Science for Computational Modeling (DSCM)*. This issue aims to highlight 
@@ -14,6 +20,7 @@
     The Call for Papers is available <a href="https://think.taylorandfrancis.com/special_issues/data-science-for-computational-modeling-dscm-design-uncertainty-quantification-and-optimization/">here</a>.
 
 - date: April 29-May 1, 2025
+  sort_date: "2025-04-29"
   headline: > 
     I was invited to participate in the workshop *Toward Next-Generation Ecosystems for Scientific Computing*, 
     held in Chicago. The event brought together researchers and developers to discuss 
@@ -22,6 +29,7 @@
     <a href="https://events.cels.anl.gov/event/602/">here</a>.
 
 - date: December 17-18, 2024
+  sort_date: "2024-12-17"
   headline: > 
     I was invited to the BAND-Nuclear Data Workshop to meet with scientists interested in 
     applying statistical learning techniques to physics models. I presented on novel 
@@ -30,6 +38,7 @@
     <a href="https://github.com/bandframework/bandframework.github.io/blob/main/_pages/Data2024Workshop.md">here</a>.
 
 - date: October 21, 2024
+  sort_date: "2024-10-21"
   headline: > 
     Moses Chan and I co-organized a two-part session at the INFORMS Annual Meeting, Seattle, 2024.  
     The sessions titled "Computational/Statistical Methods for Uncertainty Quantification" covered 
@@ -38,17 +47,21 @@
     Some of the presented works can be found via <a href="https://tinyurl.com/informs2024UQ">this post</a>.
 
 - date: July 26, 2024
+  sort_date: "2024-07-26"
   headline: >
     Our NSF grant "Advancing Theory for Nuclear Double-Beta Decay (@NDB)" has been awarded! You can read the details about this exciting project <a href="https://doublebetacollaboration.wordpress.com">here</a>.
 
 - date: March 18, 2024
+  sort_date: "2024-03-18"
   headline: >
     I gave an invited talk on the BAND Framework as part of the STAR collaboration's "Spring Juniors Day". 
 
 - date: July 8, 2023
+  sort_date: "2023-07-08"
   headline: >
      I accepted the invite to join the <a href="https://isnet-series.github.io">ISNET (Information and Statistics in Nuclear Experiment and Theory)</a> Board.
 
 - date: October 3, 2022
+  sort_date: "2022-10-03"
   headline: >
     I received NSF award to conduct my own research program within <a href="https://bandframework.github.io">BAND collaboration</a>.
