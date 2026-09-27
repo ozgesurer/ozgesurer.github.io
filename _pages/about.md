@@ -71,7 +71,8 @@ redirect_from:
       <h2 id="latest-news-heading">Latest News</h2>
 
       <div class="home__news-list">
-        {% for new in site.data.news limit: 4 %}
+        {% assign latest_news = site.data.news | sort: "sort_date" | reverse %}
+        {% for new in latest_news limit: 4 %}
           <article class="home__news-item">
             <p class="home__news-date">{{ new.date }}</p>
             {% capture news_text %}{{ new.headline | markdownify | strip_html | strip_newlines }}{% endcapture %}
