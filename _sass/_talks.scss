@@ -2,6 +2,13 @@
    TALKS
    ========================================================================== */
 
+.archive--full-width {
+  @include breakpoint($large) {
+    @include span(12 of 12);
+    padding-left: 0;
+  }
+}
+
 .talks {
   max-width: 52rem;
   padding-bottom: 3rem;
