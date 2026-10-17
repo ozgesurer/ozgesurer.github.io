@@ -7,20 +7,20 @@ embedding computation. Homepage, Publications, and Talks sources are untouched.
 The old duplicate Research collection document was removed to give `/research/`
 a single source in `_pages/research.html`.
 
-## Genuine analysis artifacts required
+## Data source
 
-The completed `research_analysis/results/` files were not present in the repository
-or workspace when this prototype was prepared. No coordinates or similarities
-have been invented. Until the genuine artifacts are exported, the page provides
-the original publication abstracts as a static fallback and keeps the map hidden.
-This prototype cannot be considered complete or visually verified with genuine
-data until the following step succeeds.
+`_data/research_map.json` contains the genuine corrected analysis exported from
+`research_analysis/results-corrected/` on branch `work`, commit
+`00a947e9886cecc6af6b8e66a36b726020c851eb`. All 15 abstracts match the current
+website corpus, including P09's corrected breakup-reactions abstract. The original
+analysis files remain unchanged on `work`; they are not required at website runtime.
+The page is ready to render from the committed JSON without Python or a model.
 
 From the repository root, with the completed analysis results available:
 
 ```bash
 python -m pip install PyYAML==6.0.2
-python tools/research_map/export.py --results research_analysis/results
+python tools/research_map/export.py --results research_analysis/results-corrected
 ```
 
 Required files: `publications.json`, `pca_coordinates.csv`,
@@ -57,7 +57,7 @@ node --check assets/js/research-map.js
 python -m unittest discover -s tools/research_map -p 'test_*.py'
 bundle install
 bundle exec jekyll build
-bundle exec jekyll serve
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
 ```
 
 After exporting genuine data, check `/research/` at desktop and mobile widths:
@@ -66,6 +66,29 @@ publication and its three neighbors, and inspect each link. Verify markers do
 not move during filtering and compare PC1/PC2 and neighbor values to the source
 CSVs. Review the homepage, Publications, and Talks for unchanged rendering.
 
-JavaScript syntax, SCSS compilation, Python syntax, and the three exporter
-validation tests pass. Ruby/Jekyll and the genuine results were unavailable in
-the preparation environment, so full site build and browser checks remain pending.
+JavaScript syntax, SCSS compilation, Python syntax, and all four exporter
+validation tests pass. All 15 coordinate pairs and 45 displayed neighbor scores
+match the corrected source CSVs exactly. DOM checks using the corrected data
+cover marker creation, abstract text, neighbor ordering, all/none filtering,
+unchanged positions, and keyboard selection.
+
+## Preview before merging
+
+Open a Codespace on `feature/research-map` (not `work` or `master`). From the
+repository root:
+
+```bash
+git switch feature/research-map
+git pull --ff-only origin feature/research-map
+bundle install
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
+```
+
+In the Codespaces **Ports** panel, open port **4000** in your browser and append
+`/research/` to the forwarded URL. This previews the branch without deploying
+or merging it. The analysis model does not need to be installed or run.
+
+The PR's **Research prototype build** workflow also runs a production Jekyll
+build and uploads a `research-site-preview` artifact. It never deploys the site.
+To view a downloaded artifact locally, unzip it, run `python -m http.server 4000`
+inside the unzipped directory, and visit `http://localhost:4000/research/`.
