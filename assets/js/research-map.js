@@ -42,11 +42,30 @@
     const heading = element('h3', p.title);
     heading.id = 'research-detail-heading';
     heading.tabIndex = -1;
-    detail.append(heading, element('p', p.abstract, 'research__abstract'));
+    detail.append(heading);
+    const fullAbstract = element('p', p.abstract, 'research__abstract');
+    fullAbstract.id = 'research-full-abstract';
+    if (p.abstract.length > 320) {
+      const excerpt = p.abstract.slice(0, 320);
+      const preview = element('p', excerpt.slice(0, excerpt.lastIndexOf(' ')) + '…', 'research__abstract-preview');
+      fullAbstract.hidden = true;
+      const toggle = element('button', 'Read full abstract', 'research__abstract-toggle');
+      toggle.type = 'button';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-controls', fullAbstract.id);
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(expanded));
+        fullAbstract.hidden = !expanded;
+        preview.hidden = expanded;
+        toggle.textContent = expanded ? 'Show less' : 'Read full abstract';
+      });
+      detail.append(preview, fullAbstract, toggle);
+    } else detail.append(fullAbstract);
     const link = element('a', 'Read publication ↗', 'research__paper');
     link.href = p.link;
     detail.append(link, element('h4', 'Three closest publications'));
-    detail.append(element('p', 'Based on original cosine similarities across all themes; not map distance.', 'research__note'));
+    detail.append(element('p', 'Outlined points and connecting lines show the closest visible publications. Rankings use original cosine similarities across all themes; filters still apply.', 'research__note'));
     const related = element('ol');
     p.closest.forEach(neighbor => {
       const other = byId.get(neighbor.id);
@@ -69,10 +88,24 @@
   }
   function update() {
     let count = 0;
+    const neighbors = selected ? byId.get(selected).closest : [];
+    const closestIds = new Set(neighbors.map(p => p.id));
+    connections.replaceChildren();
+    if (selected) {
+      const origin = byId.get(selected);
+      neighbors.forEach(neighbor => {
+        const other = byId.get(neighbor.id);
+        if (enabled.has(other.theme)) connections.append(svgElement('line', {
+          x1: x(origin.PC1), y1: y(origin.PC2), x2: x(other.PC1), y2: y(other.PC2),
+          class: 'research__connection', 'data-neighbor': other.id
+        }));
+      });
+    }
     data.publications.forEach(p => {
       const visible = enabled.has(p.theme);
       marks.get(p.id).style.display = visible ? '' : 'none';
       marks.get(p.id).setAttribute('aria-pressed', String(selected === p.id));
+      marks.get(p.id).classList.toggle('is-neighbor', closestIds.has(p.id));
       rows.get(p.id).hidden = !visible;
       if (visible) count++;
     });
@@ -120,6 +153,8 @@
   const pc2 = svgElement('text', {x: 12, y: 25, class: 'research__axis-label'});
   pc2.textContent = 'PC2 ↑';
   svg.append(pc1, pc2);
+  const connections = svgElement('g', {'aria-hidden': 'true'});
+  svg.append(connections);
   data.publications.forEach(p => {
     const theme = themes.get(p.theme);
     const mark = svgElement('g', {class: 'research__point', role: 'button', tabindex: '0',
@@ -127,9 +162,9 @@
       transform: `translate(${x(p.PC1)},${y(p.PC2)})`});
     const title = svgElement('title', {});
     title.textContent = `${p.title} (${p.year})`;
-    const label = svgElement('text', {x: 0, y: -19, 'text-anchor': 'middle'});
-    label.textContent = p.id;
-    mark.append(title, svgElement('circle', {r: 13, fill: theme.color}), label);
+    // Titles live in the native hover tooltip and caption, not overlapping SVG labels.
+    mark.append(title, svgElement('circle', {r: 18, class: 'research__halo'}),
+      svgElement('circle', {r: 13, fill: theme.color}));
     mark.addEventListener('click', () => select(p.id));
     mark.addEventListener('keydown', event => {
       if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(p.id); }

@@ -46,6 +46,17 @@ and point positions fixed. Similarities in the detail panel come from the full
 embedding space and include publications in other/hidden themes; selecting a
 neighbor reveals its theme. Displayed scores are rounded to three decimals only.
 
+The header follows the Publications/Talks spacing, and the desktop map/details
+columns use a 1.9:1 ratio, stacking on mobile. Point titles appear on hover or
+keyboard focus rather than as overlapping permanent labels. Selected papers have
+a dark outline; their three closest papers have outer rings and subtle connecting
+lines. Theme filters still hide points and their connections, while all three
+original rankings and scores remain in the detail panel. No points are moved.
+
+The detail panel initially shows an excerpt of up to 320 characters, cut at a
+word boundary. Read full abstract / Show less toggles the complete original text
+without rewriting it. Selecting another paper resets the excerpt view.
+
 Mouse hover and keyboard focus show titles and years. Enter/Space or a tap opens
 the publication detail panel; all selection actions also have native buttons in
 the title list for mobile and assistive technology. Theme checkboxes provide a
