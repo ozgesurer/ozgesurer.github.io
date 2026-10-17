@@ -53,6 +53,23 @@ def write_csv(path, rows, fields):
         writer.writerows(rows)
 
 
+def prepare_window(tokenizer, tokens, max_length):
+    """Add special tokens and explicitly collate a batch of one, without truncation."""
+    prepared = tokenizer.prepare_for_model(
+        tokens, add_special_tokens=True, truncation=False,
+        return_attention_mask=True, verbose=False)
+    if len(prepared['input_ids']) > max_length:
+        raise ValueError('Window including special tokens exceeds model limit')
+    # prepare_for_model(return_tensors='pt') can return a 1-D tensor. Collating
+    # a list of encodings guarantees the [batch, sequence] shape used by the model.
+    features = tokenizer.pad([prepared], padding=True, return_tensors='pt')
+    if features['input_ids'].ndim != 2 or features['input_ids'].shape[0] != 1:
+        raise AssertionError('Expected a batch of one token window')
+    if features['input_ids'].shape[1] > max_length:
+        raise AssertionError('Window exceeds model limit')
+    return features
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', type=Path, default=Path('_data/publist.yml'))
@@ -94,15 +111,14 @@ def main():
     vectors, diagnostics = [], []
     for record in records:
         text = ' '.join((record['title'] + '\n' + record['abstract']).split())
-        ids = tokenizer.encode(text, add_special_tokens=False, truncation=False)
+        # This full-document token list is only windowed, never sent to the model.
+        # Suppress the tokenizer's full-document length warning, not truncation.
+        ids = tokenizer.encode(text, add_special_tokens=False, truncation=False, verbose=False)
         windows = token_windows(ids, capacity, args.overlap)
         chunk_vectors, weights = [], []
         for tokens, weight in windows:
             # Pass original token IDs directly: no decode/re-tokenize drift or truncation.
-            features = tokenizer.prepare_for_model(tokens, add_special_tokens=True,
-                                                    truncation=False, return_tensors='pt')
-            if features['input_ids'].shape[1] > model.max_seq_length:
-                raise AssertionError('Window exceeds model limit')
+            features = prepare_window(tokenizer, tokens, model.max_seq_length)
             with torch.inference_mode():
                 vector = model(dict(features))['sentence_embedding'][0].cpu().numpy()
             chunk_vectors.append(vector / np.linalg.norm(vector))

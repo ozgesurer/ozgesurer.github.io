@@ -30,6 +30,18 @@ If model access is blocked, the run fails; it never substitutes vectors or score
 `--validate-only` does not import Sentence Transformers or download anything.
 No weights were downloaded during script creation.
 
+If updating an existing Codespace after the token-window fix:
+
+```bash
+git pull --ff-only origin work
+source research_analysis/.venv/bin/activate
+python -m pip install -r research_analysis/requirements.txt
+python -m unittest discover -s research_analysis -p 'test_*.py'
+python research_analysis/analyze.py
+```
+
+Transformers is explicitly pinned to 4.48.3 to retain the tokenizer API used here.
+
 ## Method
 
 - Model: `sentence-transformers/all-MiniLM-L6-v2`, fixed revision
@@ -44,6 +56,10 @@ No weights were downloaded during script creation.
   token counts, and normalize again. This limits repeated-window weighting but
   does not exactly remove contextual influence of overlap. This document aggregation
   is an explicit heuristic, not a model trained on full-document similarity.
+  Each window is explicitly collated into a batch of one (`[1, sequence_length]`)
+  after special tokens are added, and checked against the model limit. The
+  full-document tokenizer length warning is suppressed because that untruncated
+  token list is never passed directly to the model.
 - Cosine similarity is the dot product of normalized document vectors. Rank the
   unique unordered pairs; omit diagonal self-similarities. With 15 publications,
   there are 105 pairs and a 15 × 15 matrix. All original publication text is exported.
@@ -107,3 +123,8 @@ Offline checks (no model download):
 python -m unittest discover -s research_analysis -p 'test_*.py'
 python research_analysis/analyze.py --input research_analysis/extracted/publist.yml --validate-only
 ```
+
+The tokenizer regression test uses a real BERT tokenizer with a tiny local test
+vocabulary, so it needs the installed dependencies but downloads no weights. It
+checks the reported 284-token case, boundary lengths, complete ordered coverage,
+special-token overhead, two-dimensional tensors, masks, and oversized-input rejection.
