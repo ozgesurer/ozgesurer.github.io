@@ -1,0 +1,156 @@
+{
+  "source": "/tmp/publist-corrected.yml",
+  "source_sha256": "0e6df18b67ba35e7c882c0c638d9c76ef9225d80e63f00166d4642ee77aa8f6a",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "count": 15,
+  "dimensions": 384,
+  "max_sequence_length": 256,
+  "token_capacity": 254,
+  "overlap": 32,
+  "diagnostics": [
+    {
+      "id": "P01",
+      "tokens": 284,
+      "windows": 2,
+      "window_weights": [
+        254,
+        30
+      ]
+    },
+    {
+      "id": "P02",
+      "tokens": 187,
+      "windows": 1,
+      "window_weights": [
+        187
+      ]
+    },
+    {
+      "id": "P03",
+      "tokens": 175,
+      "windows": 1,
+      "window_weights": [
+        175
+      ]
+    },
+    {
+      "id": "P04",
+      "tokens": 200,
+      "windows": 1,
+      "window_weights": [
+        200
+      ]
+    },
+    {
+      "id": "P05",
+      "tokens": 126,
+      "windows": 1,
+      "window_weights": [
+        126
+      ]
+    },
+    {
+      "id": "P06",
+      "tokens": 157,
+      "windows": 1,
+      "window_weights": [
+        157
+      ]
+    },
+    {
+      "id": "P07",
+      "tokens": 281,
+      "windows": 2,
+      "window_weights": [
+        254,
+        27
+      ]
+    },
+    {
+      "id": "P08",
+      "tokens": 267,
+      "windows": 2,
+      "window_weights": [
+        254,
+        13
+      ]
+    },
+    {
+      "id": "P09",
+      "tokens": 160,
+      "windows": 1,
+      "window_weights": [
+        160
+      ]
+    },
+    {
+      "id": "P10",
+      "tokens": 387,
+      "windows": 2,
+      "window_weights": [
+        254,
+        133
+      ]
+    },
+    {
+      "id": "P11",
+      "tokens": 193,
+      "windows": 1,
+      "window_weights": [
+        193
+      ]
+    },
+    {
+      "id": "P12",
+      "tokens": 268,
+      "windows": 2,
+      "window_weights": [
+        254,
+        14
+      ]
+    },
+    {
+      "id": "P13",
+      "tokens": 178,
+      "windows": 1,
+      "window_weights": [
+        178
+      ]
+    },
+    {
+      "id": "P14",
+      "tokens": 219,
+      "windows": 1,
+      "window_weights": [
+        219
+      ]
+    },
+    {
+      "id": "P15",
+      "tokens": 235,
+      "windows": 1,
+      "window_weights": [
+        235
+      ]
+    }
+  ],
+  "threshold": 0.5,
+  "layout_seed": 42,
+  "pca_explained_variance_ratio": [
+    0.24052814486031648,
+    0.155554834832692
+  ],
+  "preprocessing": "title + newline + abstract; collapse whitespace; preserve case/punctuation",
+  "aggregation": "L2-normalize window vectors; mean weighted by newly covered tokens; L2-normalize",
+  "packages": {
+    "sentence-transformers": "3.4.1",
+    "transformers": "4.48.3",
+    "torch": "2.6.0+cpu",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.6.1",
+    "PyYAML": "6.0.2",
+    "plotly": "5.24.1",
+    "networkx": "3.4.2"
+  }
+}
