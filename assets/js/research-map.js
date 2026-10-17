@@ -17,7 +17,10 @@
   const hover = document.getElementById('research-hover');
   const filters = document.getElementById('research-filters');
   const list = document.getElementById('research-publication-list');
-  const marks = new Map(), rows = new Map(), checkboxes = new Map();
+  const marks = new Map(), rows = new Map(), chips = new Map();
+  const yearRange = document.getElementById('research-year');
+  const allYears = document.getElementById('research-all-years');
+  const isVisible = p => enabled.has(p.theme) && (allYears.checked || p.year <= Number(yearRange.value));
   let selected = null;
   const element = (tag, text, className) => {
     const node = document.createElement(tag);
@@ -33,9 +36,11 @@
   function select(id, moveFocus = true) {
     const p = byId.get(id);
     selected = id;
-    // Related papers can belong to a hidden theme; reveal that theme, without moving points.
+    // Related papers retain collection-wide rankings. Explicit navigation reveals
+    // their theme/year when needed, without moving points or changing any rankings.
     enabled.add(p.theme);
-    checkboxes.get(p.theme).checked = true;
+    chips.get(p.theme).setAttribute('aria-pressed', 'true');
+    if (!allYears.checked && p.year > Number(yearRange.value)) yearRange.value = String(p.year);
     const theme = themes.get(p.theme);
     detail.replaceChildren();
     detail.append(element('p', `${theme.name} · ${p.year}`, 'research__eyebrow'));
@@ -64,8 +69,8 @@
     } else detail.append(fullAbstract);
     const link = element('a', 'Read publication ↗', 'research__paper');
     link.href = p.link;
-    detail.append(link, element('h4', 'Three closest publications'));
-    detail.append(element('p', 'Outlined points and connecting lines show the closest visible publications. Rankings use original cosine similarities across all themes; filters still apply.', 'research__note'));
+    detail.append(link, element('h4', 'Most related publications (by textual similarity)'));
+    detail.append(element('p', 'These are relative rankings within my publication collection, not necessarily strong relationships. Connections use similarities in the original embedding space, not distances in the PCA map.', 'research__note'));
     const related = element('ol');
     p.closest.forEach(neighbor => {
       const other = byId.get(neighbor.id);
@@ -74,6 +79,9 @@
       button.type = 'button';
       button.addEventListener('click', () => select(other.id));
       item.append(button, element('small', `${other.year} · Cosine similarity ${neighbor.similarity.toFixed(3)}`));
+      const outside = element('small', 'Outside current filters · select to reveal');
+      outside.dataset.outsideId = other.id;
+      item.append(outside);
       related.append(item);
     });
     detail.append(related);
@@ -88,6 +96,17 @@
   }
   function update() {
     let count = 0;
+    let cleared = false;
+    if (selected && !isVisible(byId.get(selected))) {
+      selected = null;
+      cleared = true;
+      detail.replaceChildren(element('p', 'Publication focus', 'research__eyebrow'));
+      const heading = element('h3', 'Find a connection');
+      heading.id = 'research-detail-heading';
+      detail.append(heading, element('p', 'Your selection is outside the current filters. Choose a visible publication on the map or in the title list.'));
+    }
+    document.getElementById('research-year-label').textContent = yearRange.value;
+    yearRange.setAttribute('aria-valuetext', allYears.checked ? 'All years, 2016 to 2026' : `Up to and including ${yearRange.value}`);
     const neighbors = selected ? byId.get(selected).closest : [];
     const closestIds = new Set(neighbors.map(p => p.id));
     connections.replaceChildren();
@@ -95,48 +114,50 @@
       const origin = byId.get(selected);
       neighbors.forEach(neighbor => {
         const other = byId.get(neighbor.id);
-        if (enabled.has(other.theme)) connections.append(svgElement('line', {
+        if (isVisible(other)) connections.append(svgElement('line', {
           x1: x(origin.PC1), y1: y(origin.PC2), x2: x(other.PC1), y2: y(other.PC2),
           class: 'research__connection', 'data-neighbor': other.id
         }));
       });
     }
     data.publications.forEach(p => {
-      const visible = enabled.has(p.theme);
+      const visible = isVisible(p);
       marks.get(p.id).style.display = visible ? '' : 'none';
       marks.get(p.id).setAttribute('aria-pressed', String(selected === p.id));
       marks.get(p.id).classList.toggle('is-neighbor', closestIds.has(p.id));
       rows.get(p.id).hidden = !visible;
       if (visible) count++;
     });
-    document.getElementById('research-count').textContent = `${count} of ${data.publications.length} publications shown${count ? '' : ' — choose a theme to explore'}.`;
+    detail.querySelectorAll('[data-outside-id]').forEach(note => { note.hidden = isVisible(byId.get(note.dataset.outsideId)); });
+    document.getElementById('research-count').textContent = `${count} of ${data.publications.length} publications shown${count ? '' : ' — adjust the theme or year filters to explore'}.${cleared ? ' Selection cleared by filters.' : ''}`;
     hover.textContent = selected ? `${byId.get(selected).title} (${byId.get(selected).year})` : 'Select a point to explore its connections.';
   }
   data.themes.forEach(theme => {
-    const label = element('label');
-    const checkbox = element('input');
-    checkbox.type = 'checkbox';
-    checkbox.checked = true;
-    checkbox.addEventListener('change', () => {
-      if (checkbox.checked) enabled.add(theme.id); else enabled.delete(theme.id);
-      if (selected && !enabled.has(byId.get(selected).theme)) {
-        selected = null;
-        detail.replaceChildren(element('p', 'Publication focus', 'research__eyebrow'));
-        const heading = element('h3', 'Find a connection');
-        heading.id = 'research-detail-heading';
-        detail.append(heading, element('p', 'Choose a visible publication on the map or in the title list.'));
-      }
+    const chip = element('button', undefined, 'research__chip');
+    chip.type = 'button';
+    chip.style.setProperty('--theme-color', theme.color);
+    chip.setAttribute('aria-pressed', 'true');
+    chip.addEventListener('click', () => {
+      if (enabled.has(theme.id)) enabled.delete(theme.id); else enabled.add(theme.id);
+      chip.setAttribute('aria-pressed', String(enabled.has(theme.id)));
       update();
     });
-    checkboxes.set(theme.id, checkbox);
+    chips.set(theme.id, chip);
     const swatch = element('span', '', 'research__swatch');
     swatch.style.backgroundColor = theme.color;
     swatch.setAttribute('aria-hidden', 'true');
-    label.append(checkbox, swatch, document.createTextNode(theme.name));
-    filters.append(label);
+    const check = element('span', '✓', 'research__chip-check');
+    check.setAttribute('aria-hidden', 'true');
+    chip.append(swatch, document.createTextNode(theme.name), check);
+    filters.append(chip);
   });
   document.getElementById('research-show-all').addEventListener('click', () => {
-    themes.forEach(theme => { enabled.add(theme.id); checkboxes.get(theme.id).checked = true; });
+    themes.forEach(theme => { enabled.add(theme.id); chips.get(theme.id).setAttribute('aria-pressed', 'true'); });
+    update();
+  });
+  yearRange.addEventListener('input', () => { allYears.checked = false; update(); });
+  allYears.addEventListener('change', () => {
+    if (allYears.checked) yearRange.value = yearRange.max;
     update();
   });
   // One uniform affine scale preserves PCA geometry; bounds remain fixed when filtering.

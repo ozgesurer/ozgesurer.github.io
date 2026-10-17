@@ -15,16 +15,24 @@ permalink: /research/
     <h2 id="research-map-heading">A map of my research</h2>
     <a href="{{ '/publications/' | relative_url }}">View all publications <span aria-hidden="true">↗</span></a>
   </div>
-  <p id="research-map-note" class="research__note">Each point represents a publication. This two-dimensional PCA projection of title-and-abstract embeddings offers an approximate view of textual connections; nearby points may differ in the original embedding space. Colors show four themes I defined, not clusters discovered by the model.</p>
+  <p id="research-map-note" class="research__note">Explore how my publications connect across research areas. Select a paper to discover related work, or filter by research theme.</p>
   <div class="research__interactive" hidden>
     <fieldset class="research__filters">
       <legend>Explore by research theme</legend>
       <div id="research-filters"></div>
       <button type="button" id="research-show-all">Show all themes</button>
     </fieldset>
+    <fieldset class="research__timeline">
+      <legend>Publication timeline</legend>
+      <div class="research__year-controls">
+        <label for="research-year">Published through <output id="research-year-label" for="research-year">2026</output></label>
+        <input id="research-year" type="range" min="2016" max="2026" step="1" value="2026">
+        <label class="research__all-years"><input id="research-all-years" type="checkbox" checked> Show all years</label>
+      </div>
+    </fieldset>
     <div class="research__workspace">
       <div class="research__canvas">
-        <p class="research__map-hint">Hover for a title · Select a point to highlight its three closest publications</p>
+        <p class="research__map-hint">Hover for a title · Select a point to explore related work</p>
         <svg id="research-map" viewBox="0 0 780 500" role="group" aria-labelledby="research-map-heading" aria-describedby="research-map-note"></svg>
         <p id="research-hover" class="research__hover" aria-hidden="true">Select a point to explore its connections.</p>
         <p id="research-count" class="research__count" role="status"></p>
@@ -32,7 +40,7 @@ permalink: /research/
       <aside id="research-detail" class="research__detail" aria-labelledby="research-detail-heading">
         <p class="research__eyebrow">Publication focus</p>
         <h3 id="research-detail-heading" tabindex="-1">Find a connection</h3>
-        <p>Choose any point on the map, or a title in the list below, to read its abstract and explore its three closest publications.</p>
+        <p>Choose any point on the map, or a title in the list below, to read its abstract and explore related publications.</p>
       </aside>
     </div>
     <details class="research__browse">
@@ -41,7 +49,8 @@ permalink: /research/
     </details>
     <details class="research__method">
       <summary>About this map</summary>
-      <p>The map uses genuine pretrained MiniLM text embeddings and the original PCA coordinates from the publication analysis. Filtering never moves the points. The closest publications are ranked using cosine similarity in the full embedding space, across all four themes, rather than distance on this map. Similarity describes textual relatedness, not research quality or influence.</p>
+      <p>Each point represents a publication. The map is a two-dimensional PCA projection of genuine pretrained MiniLM embeddings of publication titles and abstracts. Proximity is approximate: connections reflect cosine similarities in the original embedding space, not distances in this map. Filtering never moves the points.</p>
+      <p>Colors show four research themes I defined, not clusters discovered by the model. Related publications are the three highest-ranked papers within my collection, across all themes and years. These relative rankings do not necessarily indicate strong relationships. Similarity describes textual relatedness, not research quality or influence.</p>
       <p id="research-variance"></p>
     </details>
   </div>

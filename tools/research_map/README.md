@@ -57,9 +57,24 @@ The detail panel initially shows an excerpt of up to 320 characters, cut at a
 word boundary. Read full abstract / Show less toggles the complete original text
 without rewriting it. Selecting another paper resets the excerpt view.
 
+Theme filters are native toggle buttons styled as color-coded chips, with
+`aria-pressed` state and keyboard activation. The 2016–2026 slider is inclusive:
+it shows publications through the selected year. Show all years is checked by
+default; moving the slider turns it off, and checking it restores 2026. Theme
+and year filters intersect for the map, title list, and visible connections.
+If filters hide the selected paper, the detail panel clears without moving
+keyboard focus. Related papers retain their top-three collection-wide rankings;
+filtered papers are marked outside current filters. Selecting one reveals its
+theme and extends the year cutoff if needed. Scores and PCA coordinates never change.
+
+The short introduction sits above the map; technical context is in About this
+map. Related-work copy explains that collection-relative textual rankings do not
+necessarily imply strong relationships, and connections use the original embedding
+space rather than PCA distances.
+
 Mouse hover and keyboard focus show titles and years. Enter/Space or a tap opens
 the publication detail panel; all selection actions also have native buttons in
-the title list for mobile and assistive technology. Theme checkboxes provide a
+the title list for mobile and assistive technology. Theme chips provide a
 legend and filtering. All themes may be deselected, with a clear empty state.
 Publication abstracts remain available without JavaScript. On narrow screens,
 the detail panel stacks below the map and the title list provides larger targets.
@@ -69,6 +84,8 @@ the detail panel stacks below the map and the title list provides larger targets
 ```bash
 node --check assets/js/research-map.js
 python -m unittest discover -s tools/research_map -p 'test_*.py'
+npm install --prefix /tmp/research-map-tests jsdom@26.1.0 --no-audit --no-fund
+NODE_PATH=/tmp/research-map-tests/node_modules node tools/research_map/test_filters.cjs
 bundle install
 bundle exec jekyll build
 bundle exec jekyll serve --host 0.0.0.0 --port 4000
@@ -85,8 +102,12 @@ validation tests pass. All 15 coordinate pairs and 45 displayed neighbor scores
 match the corrected source CSVs exactly. DOM checks using the corrected data
 cover marker creation, abstract text, neighbor ordering, all/none filtering,
 unchanged positions, and keyboard selection.
+The saved DOM regression suite exercises all 11 year cutoffs against all four
+themes using the genuine committed data, inclusive boundaries, reset and empty
+states, selection clearing/reveal, rankings, abstract expansion, and fixed geometry.
+It also runs in the PR build workflow; jsdom is a test dependency only.
 The production build passed with Ruby 3.2 and Jekyll 3.10 locally in a container
-and in GitHub Actions. Chromium checks at 1280px and 390px widths passed for all
+and in GitHub Actions. Chromium checks at 1280px, 390px, and 320px widths passed for all
 15 original abstracts and 45 neighbor links, keyboard and pointer selection,
 filters, fixed geometry, no horizontal overflow, and the no-JavaScript fallback.
 The build retains existing warnings in unrelated Teaching, Software, CV, and

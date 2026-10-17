@@ -26,12 +26,25 @@
     a { font-size: .8rem; }
   }
   &__note { color: $dark-gray; font-size: .85rem; line-height: 1.75; max-width: 54rem; }
-  &__filters { margin: 1.5rem 0; padding: 0; border: 0;
+  &__filters { margin: 1.5rem 0 .5rem; padding: 0; border: 0;
     legend { font-size: .8rem; font-weight: 600; margin-bottom: .65rem; }
-    > div { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1.2rem; }
-    label { display: flex; align-items: center; gap: .55rem; font-size: .75rem; min-height: 44px; margin: 0; }
-    input { width: 17px; height: 17px; flex-shrink: 0; margin: 0; }
+    > div { display: flex; flex-wrap: wrap; gap: .5rem; }
     button { background: none; border: 0; color: $link-color; text-decoration: underline; padding: .6rem 0; font-size: .75rem; }
+    .research__chip { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; max-width: 100%; padding: .45rem .7rem; border: 1px solid $border-color; border-radius: 1.2rem; color: $dark-gray; font-size: .72rem; line-height: 1.4; text-align: left; text-decoration: none;
+      .research__chip-check { opacity: 0; flex-shrink: 0; }
+      &[aria-pressed="true"] { border-color: var(--theme-color); background: #f5f8f8; color: $text-color; }
+      &[aria-pressed="true"] .research__chip-check { opacity: 1; }
+      &:hover { border-color: var(--theme-color); }
+    }
+  }
+  &__timeline { margin: .5rem 0 1.5rem; padding: 0; border: 0;
+    legend { margin-bottom: .6rem; font-size: .8rem; font-weight: 600; }
+    label { margin: 0; font-size: .75rem; font-weight: normal; }
+    input[type="range"] { width: 15rem; max-width: 100%; min-width: 0; min-height: 44px; margin: 0; padding: 0; border: 0; background: transparent; accent-color: #315f72; }
+  }
+  &__year-controls { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; }
+  &__all-years { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px;
+    input { margin: 0; accent-color: #315f72; }
   }
   &__swatch { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
   &__workspace { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(280px, 1fr); gap: 1.5rem; align-items: start; }
@@ -75,7 +88,7 @@
     &__detail .research__abstract { max-height: none; }
   }
   @media (max-width: 550px) {
-    &__filters > div { grid-template-columns: 1fr; }
+    &__timeline input[type="range"] { flex: 1 1 10rem; min-width: 10rem; }
     &__canvas { padding: .75rem .4rem; }
   }
   @media (max-width: 700px) {
