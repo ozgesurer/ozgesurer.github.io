@@ -79,6 +79,19 @@ def load_artifacts(directory):
                                      for name in names}))
 
 
+def validate_corpus(publications, source):
+    """Prevent old abstracts or reassigned IDs from being presented as current research."""
+    by_id = {f'P{i:02d}': p for i, p in enumerate(source, 1)}
+    if len(source) != len(publications):
+        raise ValueError('Analysis and current publication counts differ')
+    for p in publications:
+        current = by_id.get(p['id'])
+        if (current is None or current['title'] != p['title'] or
+                current['description'].split() != p['abstract'].split()):
+            raise ValueError(f'Analysis abstract differs from current publication: {p["id"]}. '
+                             'Resolve the source mismatch before publishing this map.')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--results', type=Path, default=Path('research_analysis/results'))
@@ -91,13 +104,7 @@ def main():
     # Prevent silently mapping an outdated corpus to the current website publications.
     import yaml
     source = yaml.safe_load(Path('_data/publist.yml').read_text())
-    by_id = {f'P{i:02d}': p for i, p in enumerate(source, 1)}
-    for p in data['publications']:
-        current = by_id.get(p['id'])
-        if (current is None or current['title'] != p['title'] or
-                current['description'].split() != p['abstract'].split()):
-            raise ValueError(f'Analysis abstract differs from current publication: {p["id"]}. '
-                             'Resolve the source mismatch before publishing this map.')
+    validate_corpus(data['publications'], source)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     print(f'Exported 15 publications with unchanged coordinates and original similarities to {args.output}')
