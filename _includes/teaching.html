@@ -10,12 +10,10 @@
         <h3>{{ course.title }}</h3>
         <p class="teaching__institution">{{ course.institution }}</p>
         <p class="teaching__semesters">{{ course.semesters }}</p>
-        {% if course.current %}<p class="teaching__current">Current teaching assignment</p>{% endif %}
         {% if course.syllabus %}<a class="teaching__link" href="{{ course.syllabus | relative_url }}">{{ course.syllabus_label }} <span class="teaching__format">(PDF)</span></a>{% endif %}
       </article>
       {% endfor %}
     </div>
-    <p class="teaching__credits">All courses carry three credit hours.</p>
   </section>
 
   <details class="teaching__history">
@@ -26,8 +24,7 @@
         <h3>{{ term.semester }}</h3>
         <div>
           <p class="teaching__history-course">{{ term.course }}</p>
-          <p>{{ term.institution }}</p>
-          <p>{% if term.sections == 'One section' %}One section{% else %}Sections {{ term.sections }}{% endif %}</p>
+          <p>{{ term.institution }} &middot; {% if term.sections == 'One section' %}One section{% else %}Sections {{ term.sections }}{% endif %}</p>
         </div>
       </li>
       {% endfor %}

@@ -1,9 +1,8 @@
 courses:
-  - title: Monitoring/Design
+  - title: Statistical Monitoring and Design of Experiments
     number: ISA/STA 365
     institution: Miami University
     semesters: Spring 2026 and Fall 2026
-    current: true
   - title: Applied Regression Analysis
     number: ISA 291 and ISA 391
     institution: Miami University
@@ -17,14 +16,14 @@ courses:
     syllabus: /files/IEMS303_Syllabus.pdf
     syllabus_label: IEMS 303 syllabus
 
-# Most recent semester first. All courses carry three credit hours.
+# Most recent semester first.
 history:
   - semester: Fall 2026
-    course: "ISA/STA 365: Monitoring/Design"
+    course: "ISA/STA 365: Statistical Monitoring and Design of Experiments"
     institution: Miami University
     sections: A, B
   - semester: Spring 2026
-    course: "ISA/STA 365: Monitoring/Design"
+    course: "ISA/STA 365: Statistical Monitoring and Design of Experiments"
     institution: Miami University
     sections: A, B
   - semester: Fall 2025
