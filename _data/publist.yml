@@ -159,15 +159,13 @@
 - title: "Uncertainty quantification in breakup reactions"
   image: surmiseCDCC.png
   description: >
-    Due to large pressure gradients at early times, standard hydrodynamic model simulations of relativistic heavy-ion collisions 
-    do not become reliable until O(1)fm/c after the collision. To address this one often introduces a pre-hydrodynamic stage that
-    models the early evolution microscopically, typically as a conformal, weakly interacting gas. In such an approach the transition
-    from the pre-hydrodynamic to the hydrodynamic stage is discontinuous, introducing considerable theoretical model ambiguity. 
-    Alternatively, fluids with large anisotropic pressure gradients can be handled macroscopically using the recently developed 
-    Viscous Anisotropic Hydrodynamics (VAH). In high-energy heavy-ion collisions VAH is applicable already at very early times, 
-    and at later times transitions smoothly into conventional second-order viscous hydrodynamics (VH). We present a Bayesian calibration
-    of the VAH model with experimental data for Pb–Pb collisions at the LHC. We find that the VAH model has the unique capability of 
-    constraining the specific viscosities of the QGP at higher temperatures than other previously used models.
+    Breakup reactions are one of the favored probes to study loosely bound nuclei, particularly those in the limit of stability forming a halo. 
+    In order to interpret such breakup experiments, the continuum discretized coupled channel method is typically used. In this study, 
+    the first Bayesian analysis of a breakup reaction model is performed. We use a combination of statistical methods together with 
+    a three-body reaction model (the continuum discretized coupled channel method) to quantify the uncertainties on the breakup observables 
+    due to the parameters in the effective potential describing the loosely bound projectile of interest. The combination of tools we develop 
+    opens the path for a Bayesian analysis of not only breakup processes, but also a wide array of complex processes that require computationally 
+    intensive reaction models.
   authors: Özge Sürer, Filomena M. Nunes, Matthew Plumlee, Stefan M. Wild.
   link:
     url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024607
