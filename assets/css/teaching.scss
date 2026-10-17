@@ -1,0 +1,114 @@
+---
+---
+@import "vendor/breakpoint/breakpoint";
+@import "variables";
+
+/* Loaded only by the Teaching page; shared layout supplies width and heading. */
+.teaching {
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.6;
+
+  .teaching__heading {
+    margin: 0 0 1.4rem;
+    padding: 0;
+    border: 0;
+    font-size: 1.25rem;
+  }
+
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid $link-color;
+    outline-offset: 4px;
+  }
+}
+
+.teaching__courses {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.teaching__course {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid $border-color;
+  border-top: 2px solid $link-color;
+  border-radius: 3px;
+
+  h3 {
+    margin: 0.5rem 0 0.85rem;
+    color: $darker-gray;
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  p { margin: 0 0 0.4rem; }
+}
+
+.teaching__number {
+  color: $text-color;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}
+
+.teaching__institution { font-size: 0.9rem; }
+.teaching__semesters { color: $text-color; font-size: 0.85rem; }
+.teaching__current { color: $text-color; font-size: 0.8rem; font-style: italic; }
+.teaching__link { display: inline-block; margin-top: 0.6rem; font-size: 0.85rem; font-weight: 600; }
+.teaching__format { font-weight: 400; }
+.teaching__credits { margin: 1rem 0 2.5rem; color: $text-color; font-size: 0.8rem; }
+
+.teaching__history {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  summary {
+    padding: 1.25rem 0;
+    color: $text-color;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+}
+
+.teaching__hint { margin-left: 0.75rem; font-size: 0.8rem; font-weight: 400; }
+
+.teaching .teaching__record {
+  margin: 0;
+  padding: 0 0 0.5rem;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 1.5rem;
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid $border-color;
+    font-size: 0.85rem;
+  }
+
+  h3 { margin: 0; font-size: 0.9rem; line-height: 1.6; }
+  p { margin: 0; }
+}
+
+.teaching__history-course { font-weight: 600; }
+.teaching__project {
+  max-width: 44rem;
+  padding-top: 2.5rem;
+
+  h3 { margin: 0 0 0.75rem; font-size: 1.05rem; line-height: 1.5; }
+  p { margin: 0; font-size: 0.9rem; }
+}
+
+@media (max-width: 800px) {
+  .teaching__courses { grid-template-columns: 1fr; gap: 1rem; }
+  .teaching__course { padding: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .teaching { padding-top: 2rem; }
+  .teaching__hint { display: block; margin: 0.35rem 0 0 1.1rem; }
+  .teaching .teaching__record li { grid-template-columns: 1fr; gap: 0.35rem; }
+}
