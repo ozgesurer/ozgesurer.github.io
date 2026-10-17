@@ -1,0 +1,80 @@
+---
+---
+@import "vendor/breakpoint/breakpoint";
+@import "variables";
+
+.research {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+  [hidden] { display: none !important; }
+  button, summary, input { cursor: pointer; }
+  button, a, summary, input, [role="button"] {
+    &:focus-visible { outline: 3px solid #296b87; outline-offset: 4px; }
+  }
+  button { font: inherit; }
+  &__header {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $border-color;
+    h1 { margin: .4rem 0 1rem; font-size: 2.75rem; line-height: 1.1; }
+    > p:not(.research__eyebrow) { max-width: 48rem; color: $dark-gray; line-height: 1.75; }
+  }
+  &__eyebrow { margin: 0; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #536b76; font-weight: 600; }
+  &__explore { padding-top: 2.5rem; }
+  &__section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    h2 { margin: 0; font-size: 1.5rem; }
+    a { font-size: .8rem; }
+  }
+  &__note { color: $dark-gray; font-size: .85rem; line-height: 1.75; max-width: 54rem; }
+  &__filters { margin: 1.5rem 0; padding: 0; border: 0;
+    legend { font-size: .8rem; font-weight: 600; margin-bottom: .65rem; }
+    > div { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1.2rem; }
+    label { display: flex; align-items: center; gap: .55rem; font-size: .75rem; min-height: 44px; margin: 0; }
+    input { width: 17px; height: 17px; flex-shrink: 0; margin: 0; }
+    button { background: none; border: 0; color: $link-color; text-decoration: underline; padding: .6rem 0; font-size: .75rem; }
+  }
+  &__swatch { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  &__workspace { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, 1fr); gap: 1.5rem; align-items: start; }
+  &__canvas { background: #f5f8f8; border: 1px solid #e0e8e9; border-radius: 8px; padding: 1rem .75rem .5rem;
+    svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .research__point { cursor: pointer; }
+    .research__point circle { stroke: white; stroke-width: 3; transition: stroke-width .15s; }
+    .research__point[aria-pressed="true"] circle { stroke: #172f3a; stroke-width: 4; }
+    .research__point:hover circle, .research__point:focus circle { stroke: #172f3a; stroke-width: 4; }
+    .research__point text { fill: #253e48; font-size: 13px; font-weight: 600; pointer-events: none; }
+    .research__axis { stroke: #dce5e7; stroke-dasharray: 4 6; }
+    .research__axis-label { fill: #5e747d; font-size: 13px; }
+  }
+  &__map-hint, &__count { color: #566a72; margin: 0; font-size: .7rem; line-height: 1.6; }
+  &__hover { min-height: 3.4em; font-size: .8rem; margin: .6rem 0; line-height: 1.5; }
+  &__detail { border-top: 3px solid #315f72; padding: 1.1rem 0; scroll-margin-top: 1rem;
+    h3 { margin: .65rem 0; font-size: 1.1rem; line-height: 1.5; }
+    h4 { margin-top: 1.6rem; font-size: .85rem; }
+    p { font-size: .85rem; line-height: 1.75; }
+    .research__abstract { max-height: 26rem; overflow: auto; padding-right: .5rem; }
+    ol { padding-left: 1.2rem; font-size: .8rem; }
+    li { margin-bottom: .8rem; }
+    button { text-align: left; background: none; border: 0; padding: .3rem 0; color: $link-color; line-height: 1.5; min-height: 44px; }
+    small { display: block; color: $dark-gray; font-size: .7rem; }
+  }
+  &__paper { display: inline-block; border: 1px solid $border-color; padding: .5rem .8rem; border-radius: 3px; font-size: .8rem; text-decoration: none; }
+  &__browse, &__method, &__reading { border-top: 1px solid $border-color; padding-top: 1.2rem; margin-top: 1.2rem;
+    summary { font-size: .85rem; font-weight: 600; padding: .4rem 0; }
+    p { font-size: .85rem; line-height: 1.75; }
+  }
+  &__browse ul { list-style: none; padding: 0; }
+  &__browse button { width: 100%; background: none; border: 0; text-align: left; min-height: 44px; padding: .6rem .3rem; font-size: .85rem; line-height: 1.6; color: $link-color; }
+  &__reading article { padding: 1rem 0; max-width: 48rem;
+    h2 { font-size: 1.05rem; line-height: 1.5; }
+  }
+  @media (max-width: 800px) {
+    &__workspace { grid-template-columns: 1fr; }
+    &__detail .research__abstract { max-height: none; }
+  }
+  @media (max-width: 550px) {
+    padding-top: 2rem;
+    &__header h1 { font-size: 2.15rem; }
+    &__filters > div { grid-template-columns: 1fr; }
+    &__canvas { padding: .75rem .4rem; }
+  }
+}
