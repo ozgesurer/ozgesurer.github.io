@@ -1,0 +1,56 @@
+courses:
+  - title: Statistical Monitoring and Design of Experiments
+    number: ISA/STA 365
+    institution: Miami University
+    semesters: Spring 2026 and Fall 2026
+  - title: Applied Regression Analysis
+    number: ISA 291 and ISA 391
+    institution: Miami University
+    semesters: Fall 2022–Fall 2025
+    syllabus: /files/ISA291_Syllabus.pdf
+    syllabus_label: ISA 291 syllabus
+  - title: Statistics
+    number: IEMS 303
+    institution: Northwestern University
+    semesters: Spring 2019
+    syllabus: /files/IEMS303_Syllabus.pdf
+    syllabus_label: IEMS 303 syllabus
+
+# Most recent semester first.
+history:
+  - semester: Fall 2026
+    course: "ISA/STA 365: Statistical Monitoring and Design of Experiments"
+    institution: Miami University
+    sections: A, B
+  - semester: Spring 2026
+    course: "ISA/STA 365: Statistical Monitoring and Design of Experiments"
+    institution: Miami University
+    sections: A, B
+  - semester: Fall 2025
+    course: "ISA 391: Applied Regression Analysis"
+    institution: Miami University
+    sections: A, B
+  - semester: Fall 2024
+    course: "ISA 291: Applied Regression Analysis"
+    institution: Miami University
+    sections: C, E
+  - semester: Spring 2024
+    course: "ISA 291: Applied Regression Analysis"
+    institution: Miami University
+    sections: B, C
+  - semester: Fall 2023
+    course: "ISA 291: Applied Regression Analysis"
+    institution: Miami University
+    sections: A, B
+  - semester: Spring 2023
+    course: "ISA 291: Applied Regression Analysis"
+    institution: Miami University
+    sections: A, B
+  - semester: Fall 2022
+    course: "ISA 291: Applied Regression Analysis"
+    institution: Miami University
+    sections: C, D
+  - semester: Spring 2019
+    course: "IEMS 303: Statistics"
+    institution: Northwestern University
+    sections: One section

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{ '/assets/css/teaching.css' | relative_url }}">
+
+<div class="teaching">
+  <section aria-labelledby="teaching-courses">
+    <h2 id="teaching-courses" class="teaching__heading">Courses taught</h2>
+    <div class="teaching__courses">
+      {% for course in site.data.teaching.courses %}
+      <article class="teaching__course">
+        <p class="teaching__number">{{ course.number }}</p>
+        <h3>{{ course.title }}</h3>
+        <p class="teaching__institution">{{ course.institution }}</p>
+        <p class="teaching__semesters">{{ course.semesters }}</p>
+        {% if course.syllabus %}<a class="teaching__link" href="{{ course.syllabus | relative_url }}">{{ course.syllabus_label }} <span class="teaching__format">(PDF)</span></a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <details class="teaching__history">
+    <summary>Teaching History <span class="teaching__hint">Semester-by-semester record</span></summary>
+    <ol class="teaching__record">
+      {% for term in site.data.teaching.history %}
+      <li>
+        <h3>{{ term.semester }}</h3>
+        <div>
+          <p class="teaching__history-course">{{ term.course }}</p>
+          <p>{{ term.institution }} &middot; {% if term.sections == 'One section' %}One section{% else %}Sections {{ term.sections }}{% endif %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </details>
+
+  <section class="teaching__project" aria-labelledby="teaching-project">
+    <h2 id="teaching-project" class="teaching__heading">Teaching project</h2>
+    <h3>Confidence in Learning Statistics with R Programming Language</h3>
+    <p>At Northwestern University, I implemented this project as a participant in the <a href="https://www.northwestern.edu/searle/initiatives/grad/cirtl/searle-teaching-as-research-program/index.html">Searle Center Teaching-As-Research (STAR) program</a> and presented the findings at a poster session.</p>
+    <a class="teaching__link" href="{{ '/files/STAR_poster.pdf' | relative_url }}">View project poster <span class="teaching__format">(PDF)</span></a>
+  </section>
+</div>
