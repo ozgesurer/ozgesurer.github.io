@@ -4,6 +4,9 @@ The page at `/research/` uses the site's existing default layout, typography,
 navigation, and footer. Its SCSS and plain JavaScript are loaded only by the
 Research layout. It adds no visualization dependencies, external API calls, or
 embedding computation. Homepage, Publications, and Talks sources are untouched.
+The only data request is for the same site's static `/assets/data/research-map.json`.
+It uses no external runtime API. Serving JSON separately prevents the shared
+HTML compressor from altering abstract strings.
 The old duplicate Research collection document was removed to give `/research/`
 a single source in `_pages/research.html`.
 
@@ -71,6 +74,12 @@ validation tests pass. All 15 coordinate pairs and 45 displayed neighbor scores
 match the corrected source CSVs exactly. DOM checks using the corrected data
 cover marker creation, abstract text, neighbor ordering, all/none filtering,
 unchanged positions, and keyboard selection.
+The production build passed with Ruby 3.2 and Jekyll 3.10 locally in a container
+and in GitHub Actions. Chromium checks at 1280px and 390px widths passed for all
+15 original abstracts and 45 neighbor links, keyboard and pointer selection,
+filters, fixed geometry, no horizontal overflow, and the no-JavaScript fallback.
+The build retains existing warnings in unrelated Teaching, Software, CV, and
+collection excerpts; those pages were not edited.
 
 ## Preview before merging
 

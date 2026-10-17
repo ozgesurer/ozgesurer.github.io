@@ -11,7 +11,7 @@ permalink: /research/
   <p>Explore the map to see connections across my publications, or choose a research theme to follow a particular thread.</p>
 </header>
 
-<section class="research__explore" aria-labelledby="research-map-heading" data-research-map>
+<section class="research__explore" aria-labelledby="research-map-heading" data-research-map data-map-url="{{ '/assets/data/research-map.json' | relative_url }}">
   <div class="research__section-heading">
     <h2 id="research-map-heading">A map of my research</h2>
     <a href="{{ '/publications/' | relative_url }}">View all publications <span aria-hidden="true">↗</span></a>
@@ -47,7 +47,6 @@ permalink: /research/
     </details>
   </div>
   <p id="research-map-fallback">Browse the publications below to explore my research.</p>
-  <script id="research-map-data" type="application/json">{{ site.data.research_map | jsonify | replace: '</', '<\/' }}</script>
 </section>
 
 <details class="research__reading" open>

@@ -1,9 +1,13 @@
 /* Static research map. Coordinates and similarities are never recomputed here. */
-(() => {
+(async () => {
   'use strict';
   const root = document.querySelector('[data-research-map]');
   if (!root) return;
-  const data = JSON.parse(document.getElementById('research-map-data').textContent);
+  // A local static file bypasses the shared HTML compressor, which would alter
+  // whitespace inside embedded JSON abstract strings.
+  const response = await fetch(root.dataset.mapUrl, {credentials: 'same-origin'});
+  if (!response.ok) throw new Error('Research map data could not be loaded');
+  const data = await response.json();
   if (!data || !Array.isArray(data.publications) || !data.publications.length) return;
   const byId = new Map(data.publications.map(p => [p.id, p]));
   const themes = new Map(data.themes.map(t => [t.id, t]));
@@ -147,4 +151,4 @@
   document.getElementById('research-map-fallback').hidden = true;
   document.querySelector('.research__reading').open = false;
   update();
-})();
+})().catch(error => { console.warn('Research map unavailable; publication abstracts remain accessible.', error); });
