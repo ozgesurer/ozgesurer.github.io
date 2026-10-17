@@ -1,0 +1,99 @@
+---
+---
+@import "vendor/breakpoint/breakpoint";
+@import "variables";
+
+.research {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+  [hidden] { display: none !important; }
+  button, summary, input { cursor: pointer; }
+  button, a, summary, input, [role="button"] {
+    &:focus-visible { outline: 3px solid #296b87; outline-offset: 4px; }
+  }
+  button { font: inherit; }
+  &__header {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $border-color;
+    h1 { margin: 0; font-size: 2.75rem; line-height: 1.1; }
+    > p { max-width: 48rem; margin: .85rem 0 0; color: $dark-gray; line-height: 1.6; }
+  }
+  &__eyebrow { margin: 0; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #536b76; font-weight: 600; }
+  &__explore { padding-top: 2.5rem; }
+  &__section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    h2 { margin: 0; font-size: 1.5rem; }
+    a { font-size: .8rem; }
+  }
+  &__note { color: $dark-gray; font-size: .85rem; line-height: 1.75; max-width: 54rem; }
+  &__filters { margin: 1.5rem 0 .5rem; padding: 0; border: 0;
+    legend { font-size: .8rem; font-weight: 600; margin-bottom: .65rem; }
+    > div { display: flex; flex-wrap: wrap; gap: .5rem; }
+    button { background: none; border: 0; color: $link-color; text-decoration: underline; padding: .6rem 0; font-size: .75rem; }
+    .research__chip { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; max-width: 100%; padding: .45rem .7rem; border: 1px solid $border-color; border-radius: 1.2rem; color: $dark-gray; font-size: .72rem; line-height: 1.4; text-align: left; text-decoration: none;
+      .research__chip-check { opacity: 0; flex-shrink: 0; }
+      &[aria-pressed="true"] { border-color: var(--theme-color); background: #f5f8f8; color: $text-color; }
+      &[aria-pressed="true"] .research__chip-check { opacity: 1; }
+      &:hover { border-color: var(--theme-color); }
+    }
+  }
+  &__timeline { margin: .5rem 0 1.5rem; padding: 0; border: 0;
+    legend { margin-bottom: .6rem; font-size: .8rem; font-weight: 600; }
+    label { margin: 0; font-size: .75rem; font-weight: normal; }
+    input[type="range"] { width: 15rem; max-width: 100%; min-width: 0; min-height: 44px; margin: 0; padding: 0; border: 0; background: transparent; accent-color: #315f72; }
+  }
+  &__year-controls { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; }
+  &__all-years { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px;
+    input { margin: 0; accent-color: #315f72; }
+  }
+  &__swatch { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  &__workspace { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(280px, 1fr); gap: 1.5rem; align-items: start; }
+  &__canvas { background: #f5f8f8; border: 1px solid #e0e8e9; border-radius: 8px; padding: 1rem .75rem .5rem;
+    svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .research__point { cursor: pointer; }
+    .research__point circle { stroke: white; stroke-width: 3; transition: stroke-width .15s; }
+    .research__point .research__halo { fill: none; stroke: #53757f; stroke-width: 2; opacity: 0; }
+    .research__point.is-neighbor .research__halo { opacity: 1; }
+    .research__connection { stroke: #78939d; stroke-width: 1.5; opacity: .65; pointer-events: none; }
+    .research__point[aria-pressed="true"] circle { stroke: #172f3a; stroke-width: 4; }
+    .research__point:hover circle, .research__point:focus circle { stroke: #172f3a; stroke-width: 4; }
+    .research__axis { stroke: #dce5e7; stroke-dasharray: 4 6; }
+    .research__axis-label { fill: #5e747d; font-size: 13px; }
+  }
+  &__map-hint, &__count { color: #566a72; margin: 0; font-size: .7rem; line-height: 1.6; }
+  &__hover { min-height: 3.4em; font-size: .8rem; margin: .6rem 0; line-height: 1.5; }
+  &__detail { border-top: 3px solid #315f72; padding: 1.1rem 0; scroll-margin-top: 1rem;
+    h3 { margin: .65rem 0; font-size: 1.1rem; line-height: 1.5; }
+    h4 { margin-top: 1.6rem; font-size: .85rem; }
+    p { font-size: .85rem; line-height: 1.75; }
+    .research__abstract, .research__abstract-preview { margin-bottom: .25rem; }
+    .research__abstract-toggle { display: block; margin-bottom: .8rem; font-size: .8rem; }
+    ol { padding-left: 1.2rem; font-size: .8rem; }
+    li { margin-bottom: .8rem; }
+    button { text-align: left; background: none; border: 0; padding: .3rem 0; color: $link-color; line-height: 1.5; min-height: 44px; }
+    small { display: block; color: $dark-gray; font-size: .7rem; }
+  }
+  &__paper { display: inline-block; border: 1px solid $border-color; padding: .5rem .8rem; border-radius: 3px; font-size: .8rem; text-decoration: none; }
+  &__browse, &__method, &__reading { border-top: 1px solid $border-color; padding-top: 1.2rem; margin-top: 1.2rem;
+    summary { font-size: .85rem; font-weight: 600; padding: .4rem 0; }
+    p { font-size: .85rem; line-height: 1.75; }
+  }
+  &__browse ul { list-style: none; padding: 0; }
+  &__browse button { width: 100%; background: none; border: 0; text-align: left; min-height: 44px; padding: .6rem .3rem; font-size: .85rem; line-height: 1.6; color: $link-color; }
+  &__reading article { padding: 1rem 0; max-width: 48rem;
+    h2 { font-size: 1.05rem; line-height: 1.5; }
+  }
+  @media (max-width: 800px) {
+    &__workspace { grid-template-columns: 1fr; }
+    &__detail .research__abstract { max-height: none; }
+  }
+  @media (max-width: 550px) {
+    &__timeline input[type="range"] { flex: 1 1 10rem; min-width: 10rem; }
+    &__canvas { padding: .75rem .4rem; }
+  }
+  @media (max-width: 700px) {
+    padding-top: 2rem;
+    &__header { padding-bottom: 2rem; }
+    &__header h1 { font-size: 2.15rem; }
+  }
+}

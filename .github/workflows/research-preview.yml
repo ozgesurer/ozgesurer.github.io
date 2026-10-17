@@ -1,0 +1,36 @@
+name: Research prototype build
+
+on:
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test Research filters against genuine publication data
+        run: |
+          npm install --prefix "$RUNNER_TEMP/research-map-tests" jsdom@26.1.0 --no-audit --no-fund
+          NODE_PATH="$RUNNER_TEMP/research-map-tests/node_modules" node tools/research_map/test_filters.cjs
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Build static website
+        run: bundle exec jekyll build --destination _site
+        env:
+          JEKYLL_ENV: production
+      - name: Save preview files
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-site-preview
+          path: _site/
+          retention-days: 14
